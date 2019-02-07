@@ -22,3 +22,5 @@ while True:
         print("|\n",end='')
 
     print(' '+"-"*input_odd)
+
+# modify1
