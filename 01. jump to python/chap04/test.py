@@ -1,8 +1,13 @@
-def fib(n):
-    if n==0:
-        return 0
-    if n==1:
-        return 1
-    return fib(n-1)+fib(n-2)
+f = open('test.txt','w')
+for i in range(1,6):
+    f.write('%d번째 '%i)
 
-# 출력
+f.close()
+
+
+f = open('test.txt','r')
+
+for line in f.readlines():
+    print(line)
+
+f.close()

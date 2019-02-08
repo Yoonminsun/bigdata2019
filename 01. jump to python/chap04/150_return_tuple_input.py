@@ -1,4 +1,4 @@
-def sum_and_mul(*args):
+def sum_and_mul(*args): # *을 이용하여 시퀀스 패킹 매개변수 정의
     sum=0
     mul=1
     for i in args:
