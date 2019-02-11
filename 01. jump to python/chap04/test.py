@@ -5,8 +5,12 @@ class Test:
    def __init__(self,name):
        self.name = name
 
-my = Test('aa')
+class Test2(Test):
+    age=''
+
 # my.name='aa'
-# print(my.name)
 # my.setname('aa')
-print(my.name)
+my = Test('aa')
+my2 = Test2('bb')
+my2.age = '25'
+print(my.name,my2.name,my2.age,sep='\n',end='')
