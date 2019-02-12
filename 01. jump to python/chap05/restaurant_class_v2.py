@@ -20,5 +20,6 @@ for i in range(3):
     list[i].open_restaurant()
 
 print("저녁 10시가 되었습니다.\n")
+print(list)
 
 
