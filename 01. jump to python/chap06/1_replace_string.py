@@ -1,0 +1,5 @@
+f = open('./learning_python.txt','r')
+open_text = f.read()
+f.close()
+f = open('./learn_python_copyed.txt','w')
+f.write(open_text.replace('python','C'))
