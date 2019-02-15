@@ -1,6 +1,7 @@
 class Calculator:
     result_sum=0
     result_avg=0
+    my_list=[]
     def __init__(self,my_list):
         self.my_list = my_list
     def sum(self):
