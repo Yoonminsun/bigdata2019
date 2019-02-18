@@ -1,0 +1,73 @@
+import re
+
+print('*')
+p = re.compile('ca*t') # a가 0~무한대 반복하는 문자
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m,'\n')
+
+print('+')
+p = re.compile('ca+t') # a가 1~무한대 반복하는 문자
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m,'\n')
+
+print('{m,n}')
+p = re.compile('ca{2,5}t') # a가 2~5번 반복하는 문자, caat, caaat, caaaat, caaaaat
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m)
+m=p.match('caaaaaat')
+print('5.',m,'\n')
+
+print('{m}')
+p = re.compile('ca{2}t') # a가 무조건 2번 반복하는 문자, caat
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m,'\n')
+
+print('{m,}')
+p = re.compile('ca{2,}t') # a가 2번 이상 반복하는 문자
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m)
+m=p.match('caaaaaat')
+print('5.',m,'\n')
+
+print('{,m}')
+p = re.compile('ca{,5}t') # a가 5번 이하(최소 0) 반복하는 문자
+m=p.match('ct')
+print('1.',m)
+m=p.match('cat')
+print('2.',m)
+m=p.match('caat')
+print('3.',m)
+m=p.match('caaat')
+print('4.',m)
+m=p.match('caaaaaat')
+print('5.',m,'\n')
