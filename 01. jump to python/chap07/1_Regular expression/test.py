@@ -33,4 +33,4 @@ m=p.findall(data)
 print('data 중 .py인 파일의 이름: ',m,'\n')
 p = re.compile('(?P<name>.*)[.](?=py).*',re.MULTILINE) # 긍정형 전방탐색
 m=p.search(data)
-print('data 중 .py인 파일의 이름: ',m.group(name),'\n')
+print('data 중 .py인 첫번째 파일의 이름: ',m.group('name'),'\n')
