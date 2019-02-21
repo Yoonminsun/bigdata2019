@@ -1,7 +1,10 @@
-from xml.etree.ElementTree import parse
+from xml.etree.ElementTree import parse,Element,SubElement,dump,ElementTree
 
 tree = parse('note.xml')
 note = tree.getroot() # 가장 상위 Element 가져옴
+from2 = Element('from')
+note.append(from2)
+from2.text = 'From'
 
 # print(note.get("date"))
 # print(note.get("foo"))
@@ -18,6 +21,4 @@ note = tree.getroot() # 가장 상위 Element 가져옴
 # from_text= note.findtext('from') # note 태그 하위에 from과 일치하는 첫 번째 태그의 텍스트값 리턴
 # print(from_text)
 
-child = note.getiterator()
-print(list(child))
 

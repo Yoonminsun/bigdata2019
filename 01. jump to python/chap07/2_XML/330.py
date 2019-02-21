@@ -19,7 +19,7 @@ SubElement(note, 'body').text = "Don't forget me this weekend!"
 # body text=Don't forget me this weekend! tail=None
 
 def indent(elem, level=0):
-    # 메모장에서 줄바꿈하는것과 달리 프로그램내에서 줄바꿈할시 그 줄의 들여쓰기를 그대로 유지하지 않기 때문에 level이 필요한 것
+    # 메모장에서 줄바꿈하는것과 달리 프로그램내에서 줄바꿈할시 앞 줄의 들여쓰기를 그대로 유지하지 않기 때문에 level이 필요한 것
     i='\n' + level*' '
     if len(elem): # Element의 length는 하위 Element의 갯수를 뜻한다
         if not elem.text or not elem.text.strip():

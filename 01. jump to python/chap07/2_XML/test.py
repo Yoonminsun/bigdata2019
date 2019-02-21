@@ -1,17 +1,9 @@
-from xml.etree.ElementTree import parse
-import re
+from xml.etree.ElementTree import parse,Element,SubElement,dump,ElementTree
 
-menu=0
-tree = parse('students_info.xml')
-note = tree.getroot()
-
-p = re.compile('\s+')
-p_num = re.compile('\d+')
-text_list = list(note.itertext())
-for text in text_list:
-    m=p.match(text)
-    m_num = p_num.match(text)
-    if not m and m_num:
-        print('age: '+text)
-    elif not m and not m_num:
-        print('major: '+text)
+note = Element('note')
+to3 = SubElement(note,'to')
+dump(note)
+to3.attrib['value']='a'
+tosub = SubElement(to3,'tosub')
+tosub.attrib['name']='name'
+dump(note)

@@ -80,7 +80,7 @@ elif menu==2:
         print(' - 사용 가능한 컴퓨터 언어:',end=' ')
         if tag_students[student].find('practicable_computer_languages').text:
             for lang in tag_students[student].find('practicable_computer_languages').findall('language'):
-                print('\n > %s (학습기간: %s년, Level:%s)'%(lang.get('name'), lang.findtext('period'),lang.get('level')),end='')
+                print('\n > %s (학습기간: %s, Level:%s)'%(lang.get('name'), lang.find('period').get('value'),lang.get('level')),end='')
             print()
         else:
             print('없음')
