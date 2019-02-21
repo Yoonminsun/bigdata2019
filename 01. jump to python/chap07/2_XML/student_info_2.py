@@ -186,6 +186,7 @@ def modify_student(choice_ID):
     ElementTree(student_list).write('students_info_2.xml')
     print_student(index)
 def search_ID_index(choice_ID):
+    count_students = len(student_list)
     tag_students = student_list.findall('student')
     for student in range(count_students):
         if tag_students[student].get('ID') == choice_ID:
@@ -199,8 +200,13 @@ def remove_student(choice_ID):
     ElementTree(student_list).write('students_info_2.xml')
     print('삭제되었습니다.')
 def remove_count(choice_ID):
+    tag_students = student_list.findall('student')
+
     count_students = len(student_list)
     index = search_ID_index(choice_ID)
+    print(tag_students)
+    print(index)
+    print(tag_students[index])
     if tag_students[index].get('sex') == '남':
         count.count_male -= 1
     elif tag_students[index].get('sex') == '여':
