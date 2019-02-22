@@ -170,8 +170,6 @@ def insert_student(): # 학생 입력 함수
         SubElement(language,'period',attrib={'value':input_period})
 def modify_student(choice_ID): # 학생정보 수정 함수
     index_print=5
-    ori_value=''
-    modify_value=''
     index=0
     tag_students = student_list.findall('student')
     for student in range(count_students):
