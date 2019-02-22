@@ -3,6 +3,8 @@ from xml.etree.ElementTree import parse,Element,SubElement,dump,ElementTree
 tree = parse('students_info_2.xml')
 student_list = tree.getroot()
 choice_menu=0
+tag_students = student_list.findall('student')
+count_students = len(student_list)
 class Count:
     count_male = 0
     count_female = 0
@@ -16,9 +18,50 @@ class Count:
     age_30_list = []
     age_40 = 0
     age_40_list = []
-    id_plus = 1
-
-tag_students = student_list.findall('student')
+    id_plus = 0
+    def count_information(self):
+        self.count_male = 0
+        self.count_female = 0
+        self.count_major = 0
+        self.count_programming = 0
+        self.count_level = 0
+        self.count_python = 0
+        self.age_20 = 0
+        self.age_20_list = []
+        self.age_30 = 0
+        self.age_30_list = []
+        self.age_40 = 0
+        self.age_40_list = []
+        for student in range(count_students):
+            if tag_students[student].get('sex')=='남':
+                self.count_male+=1
+            elif tag_students[student].get('sex')=='여':
+                self.count_female+=1
+            if tag_students[student].findtext('major')=='컴퓨터 공학':
+                self.count_major+=1
+            elif tag_students[student].findtext('major').find('통계')!=-1:
+                self.count_major+=1
+            if tag_students[student].find('practicable_computer_languages').find('language'):
+                self.count_programming+=1
+            if tag_students[student].find('practicable_computer_languages').find('language'):
+                for lang in tag_students[student].find('practicable_computer_languages').findall('language'):
+                    if lang.get('level')=='상':
+                        self.count_level+=1
+                    if lang.get('name')=='파이썬':
+                        self.count_python+=1
+            age = int(tag_students[student].findtext('age'))
+            if age>=20 and age<30:
+                self.age_20+=1
+                self.age_20_list.append('%s %s'%(tag_students[student].get('name'),tag_students[student].findtext('age')))
+            elif age>=30 and age<40:
+                self.age_30+=1
+                self.age_30_list.append('%s %s' % (tag_students[student].get('name'), tag_students[student].findtext('age')))
+            elif age>=40 and age<50:
+                self.age_40+=1
+                self.age_40_list.append('%s %s' % (tag_students[student].get('name'), tag_students[student].findtext('age')))
+            student+=1
+count = Count()
+count.id_plus = int(tag_students[len(student_list)-1].get('ID')[-3:])+1
 def print_menu(menu): # 메뉴 출력 함수
     choice=0
     if menu==1:
@@ -103,11 +146,10 @@ def search_student(in_search,choice_menu_condition): # 학생 조회 함수
                                  tag_students[found_index].findtext('age'),tag_students[found_index].get('sex')))
 def insert_student(): # 학생 입력 함수
     print('< 신규 학생 정보 입력 >')
-    global id_plus
     input_name = input("- 이름을 입력하세요 (종료는 'Enter' 입력): ")
     if input_name=='': return
-    input_ID = 'ITT{0:03d}'.format(len(student_list)+id_plus)
-    id_plus+=1
+    input_ID = 'ITT{0:03d}'.format(count.id_plus)
+    count.id_plus+=1
     input_sex = input("- 성별을 입력하세요: ")
     input_age = input("- 나이를 입력하세요: ")
     input_major = input("- 전공을 입력하세요: ")
@@ -120,13 +162,17 @@ def insert_student(): # 학생 입력 함수
         input_language_name = input("언어 이름 (종료는 'Enter' 입력): ")
         if input_language_name=='':
             ElementTree(student_list).write('students_info_2.xml')
+            # modify_count(input_ID, 1)
             return
         input_period = input('학습 기간(년/개월 단위): ')
         input_level = input('수준(상,중,하): ')
         language = SubElement(practicable, 'language',attrib={'name':input_language_name,'level':input_level})
         SubElement(language,'period',attrib={'value':input_period})
-def modify_student(choice_ID):
+def modify_student(choice_ID): # 학생정보 수정 함수
     index_print=5
+    ori_value=''
+    modify_value=''
+    index=0
     tag_students = student_list.findall('student')
     for student in range(count_students):
         if tag_students[student].get('ID') == choice_ID:
@@ -143,12 +189,11 @@ def modify_student(choice_ID):
             print('%d. Level: %s'%(index_print+2,lang.get('level')))
             index_print+=3
     else:
-        print('5. 없음\n')
+        print('5. 없음 (신규 추가)\n')
 
     choice_modify = int(input('수정할 항목의 번호를 입력하세요: '))
     if ((choice_modify-5)%3)!=0:
         str_modify = input('수정할 값을 입력하세요: ')
-
     if choice_modify==1:
         tag_students[index].set('name',str_modify)
     elif choice_modify==2:
@@ -158,7 +203,7 @@ def modify_student(choice_ID):
     elif choice_modify==4:
         tag_students[index].find('major').text = str_modify
     elif ((choice_modify-5)%3)==0:
-        if not tag_students[index].find('practicable_computer_languages').text:
+        if not tag_students[index].find('practicable_computer_languages').find('language'):
             while True:
                 input_language_name = input("언어 이름 (종료는 'Enter' 입력): ")
                 if input_language_name == '':
@@ -185,89 +230,28 @@ def modify_student(choice_ID):
         lang[(choice_modify-5)//3].set('level',str_modify)
     ElementTree(student_list).write('students_info_2.xml')
     print_student(index)
-def search_ID_index(choice_ID):
+def search_ID_index(choice_ID): # ID 기준으로 index를 찾는 함수
     count_students = len(student_list)
     tag_students = student_list.findall('student')
     for student in range(count_students):
         if tag_students[student].get('ID') == choice_ID:
             return student
-def remove_student(choice_ID):
-    count_students = len(student_list)
+def remove_student(choice_ID): # 학생 삭제 함수
     student = search_ID_index(choice_ID)
-    tag_remove = tag_students[student]
-    student_list.remove(tag_remove)
-    remove_count(choice_ID)
-    ElementTree(student_list).write('students_info_2.xml')
-    print('삭제되었습니다.')
-def remove_count(choice_ID):
-    tag_students = student_list.findall('student')
+    try:
+        tag_remove = tag_students[student]
+        student_list.remove(tag_remove)
+        ElementTree(student_list).write('students_info_2.xml')
+        print('삭제되었습니다.')
+    except TypeError:
+        print('없는 ID 입니다.')
 
-    count_students = len(student_list)
-    index = search_ID_index(choice_ID)
-    print(tag_students)
-    print(index)
-    print(tag_students[index])
-    if tag_students[index].get('sex') == '남':
-        count.count_male -= 1
-    elif tag_students[index].get('sex') == '여':
-        count.count_female -= 1
-    if tag_students[index].findtext('major') == '컴퓨터 공학':
-        count.count_major -= 1
-    elif tag_students[index].findtext('major').find('통계') != -1:
-        count.count_major -= 1
-    if tag_students[index].find('practicable_computer_languages').text:
-        count.count_programming -= 1
-    if tag_students[index].find('practicable_computer_languages').text:
-        for lang in tag_students[index].find('practicable_computer_languages').findall('language'):
-            if lang.get('level') == '상':
-                count.count_level -= 1
-            if lang.get('name') == 'Python':
-                count.count_python -= 1
-    age = int(tag_students[index].findtext('age'))
-    if age >= 20 and age < 30:
-        count.age_20 -= 1
-        count.age_20_list.remove('%s %s' % (tag_students[index].get('name'), tag_students[index].findtext('age')))
-    elif age >= 30 and age < 40:
-        count.age_30 -= 1
-        count.age_30_list.remove('%s %s' % (tag_students[index].get('name'), tag_students[index].findtext('age')))
-    elif age >= 40 and age < 50:
-        count.age_40 -= 1
-        count.age_40_list.remove('%s %s' % (tag_students[index].get('name'), tag_students[index].findtext('age')))
 choice_menu = print_menu(1)
-
 while True:
     count_students = len(student_list)
     tag_students = student_list.findall('student')
     if choice_menu==1: # 요약 정보
-        count = Count()
-        for student in range(count_students):
-            if tag_students[student].get('sex')=='남':
-                count.count_male+=1
-            elif tag_students[student].get('sex')=='여':
-                count.count_female+=1
-            if tag_students[student].findtext('major')=='컴퓨터 공학':
-                count.count_major+=1
-            elif tag_students[student].findtext('major').find('통계')!=-1:
-                count.count_major+=1
-            if tag_students[student].find('practicable_computer_languages').text:
-                count.count_programming+=1
-            if tag_students[student].find('practicable_computer_languages').text:
-                for lang in tag_students[student].find('practicable_computer_languages').findall('language'):
-                    if lang.get('level')=='상':
-                        count.count_level+=1
-                    if lang.get('name')=='Python':
-                        count.count_python+=1
-            age = int(tag_students[student].findtext('age'))
-            if age>=20 and age<30:
-                count.age_20+=1
-                count.age_20_list.append('%s %s'%(tag_students[student].get('name'),tag_students[student].findtext('age')))
-            elif age>=30 and age<40:
-                count.age_30+=1
-                count.age_30_list.append('%s %s' % (tag_students[student].get('name'), tag_students[student].findtext('age')))
-            elif age>=40 and age<50:
-                count.age_40+=1
-                count.age_40_list.append('%s %s' % (tag_students[student].get('name'), tag_students[student].findtext('age')))
-            student+=1
+        count.count_information()
         print('<요약 정보>')
         print('* 전체 학생수: %d 명'%count_students)
         print('* 성별')
@@ -293,19 +277,17 @@ while True:
         choice_sub = print_menu(2)
         if choice_sub==1:
             choice_condition = print_menu(3)
-            in_search=input("검색어를 입력하세요: ")
             if choice_condition==8:
-                print_menu(2)
+                pass
             else:
+                in_search=input("검색어를 입력하세요: ")
                 search_student(in_search, choice_condition)
-
         elif choice_sub==2:
             count_students = len(student_list)
             for student in range(count_students):
                 print_student(student)
         elif choice_sub==3:
             choice_menu = print_menu(1)
-
     elif choice_menu==4: # 수정
         choice_ID = input("수정할 학생의 ID를 입력하세요: ")
         modify_student(choice_ID)
