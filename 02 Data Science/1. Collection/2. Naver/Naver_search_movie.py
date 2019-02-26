@@ -24,10 +24,11 @@ def get_request_url(url):
         print('[%s] Error for URL: %s'%(datetime.datetime.now(),url))
         return None
 
-def getNaverSearchResult(sNode,search_text,page_start,display,genre):
+def getNaverSearchResult(sNode,search_text,page_start,display,genre,country):
     base = 'https://openapi.naver.com/v1/search'
     node = '/%s.json'%sNode
-    parameters = '?query=%s&start=%s&display=%s&genre=%s'%(urllib.parse.quote(search_text),page_start,display,genre)
+    parameters = '?query=%s&start=%s&display=%s&genre=%s&country=%s'\
+                 %(urllib.parse.quote(search_text),page_start,display,genre,country)
     url = base+node+parameters
     retData = get_request_url(url)
 
@@ -50,18 +51,18 @@ def getPostData(post,jsonResult):
                        'actor':actor,'userRating':userRating})
     return
 
-def main(search_text,genre):
+def main(search_text,genre,country):
     jsonResult=[]
     sNode = 'movie'
     display_count = 100
-    jsonSearch = getNaverSearchResult(sNode,search_text,1,display_count,genre)
+    jsonSearch = getNaverSearchResult(sNode,search_text,1,display_count,genre,country)
     index=1
     while((jsonSearch!=None) and (jsonSearch['display']!=0) and index<10):
         for post in jsonSearch['items']:
             getPostData(post,jsonResult)
 
         nStart = jsonSearch['start']+jsonSearch['display']
-        jsonSearch = getNaverSearchResult(sNode,search_text,nStart,display_count,genre)
+        jsonSearch = getNaverSearchResult(sNode,search_text,nStart,display_count,genre,country)
         index = index+1
 
     with open('%s_naver_%s.json'%(search_text,sNode),'w',encoding='utf8') as outfile:
@@ -73,4 +74,5 @@ def main(search_text,genre):
 if __name__ == '__main__':
     search_text = input('검색어 입력: ')
     search_genre = input('장르 코드 입력: ')
-    main(search_text,search_genre)
+    search_country = input('국가 코드 입력: ')
+    main(search_text,search_genre,search_country)
