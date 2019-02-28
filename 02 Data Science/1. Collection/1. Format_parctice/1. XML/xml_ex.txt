@@ -1,0 +1,23 @@
+민선25컴퓨터공학CC++Java세중
+
+# XML 문법은 파이썬에서 Dictionary 자료형과 매치되지만
+# 상하관계를 표현하여 값을 받아오기에 XML이 훨씬 좋음
+
+<student_list> #<태그명>
+	<student name="민선"> # 태그명 안에 속성 정의 가능 
+		<age>25</age>	  # 하위 관계는 들여쓰기의 정도로 구분한다
+		<major>컴퓨터 공학</major> # 하위 태그는 한줄에 작성 가능하다
+		<practicable_computer_language>
+			<name>C</name>
+			<name>C++</name>
+			<name>Java</name>
+		</practicable_computer_language>
+					.
+					.
+					.
+	</student>
+	<student>세중</student>
+			.
+			.
+			.
+</student_list> #<태그명>이 앞에 오면 괄호처럼 </태그명>이 꼭 따라온다 

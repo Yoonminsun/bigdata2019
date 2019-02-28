@@ -1,0 +1,17 @@
+<student_list>
+	<student ID="ITT002" name="&#50980;&#48124;&#49440;" sex="&#50668;">
+		<age>25</age>
+		<major>&#52980;&#54504;&#53552; &#44277;&#54617;</major>
+		<practicable_computer_languages>
+			<language level="&#51473;" name="C">
+				<period value="1&#45380;" />
+			</language>
+			<language level="&#54616;" name="Java">
+				<period value="1&#45380;" />
+			</language>
+			<language level="&#54616;" name="C++">
+				<period value="6&#44060;&#50900;" />
+			</language>
+		</practicable_computer_languages>
+    </student>
+<student>&#52628;&#44032;</student></student_list>
