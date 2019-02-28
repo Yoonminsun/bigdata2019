@@ -1,13 +1,10 @@
 import urllib.request
 from bs4 import BeautifulSoup
-import re
-import os
+import re,os,time
 
 dir_num=1
-dir_count=1
-dir_name = './naver_ranking1'
-file_name = '/movie1'
-file_num='1'
+base_dir_name = './V3_BigData'
+dir_name_ori= '/naver_ranking'
 html = urllib.request.urlopen('http://movie.naver.com/movie/sdb/rank/rmovie.nhn')
 soup = BeautifulSoup(html,'html.parser')
 soup = str(soup)
@@ -21,23 +18,20 @@ def search_file_list(dir_name):
         return len(file_list)
     except Exception:
         pass
-def search_dir_list(dir_name):
+def search_dir_list():
     global dir_num
-    global dir_count
-    dir_name = './naver_ranking%d' %dir_num
+    dir_name = '%s%s%d'%(base_dir_name,dir_name_ori,dir_num)
     if not os.path.isdir(dir_name):
         os.mkdir(dir_name)
-        return dir_count,dir_name
+        return dir_name
     else:
         file_len = search_file_list(dir_name)
         if file_len<3:
-            return dir_count,dir_name
+            return dir_name
         else:
             dir_num+=1
-            dir_count+=1
-            dir_count,dir_name = search_dir_list(dir_name)
-            return dir_count,dir_name
-
+            dir_name = search_dir_list()
+            return dir_name
 
 for index in range(len(match_list)):
     if match_list[index][0].find(',')!=-1:
@@ -52,9 +46,11 @@ for index in range(len(match_list)):
         change = match_list[index][2]
     tags_list.append(str(index + 1) + ',' + title + ',' + change)
 
-dir_count,dir_name = search_dir_list(dir_name)
-file_len = search_file_list(dir_name)
-file_name = '/movie%d'%((file_len+1)+(dir_count-1)*3)
+if not os.path.isdir('%s'%base_dir_name):
+    os.mkdir('%s'%base_dir_name)
+
+dir_name = search_dir_list()
+file_name = '/%s'%time.strftime('%Y-%m-%d_%H%M%S',time.localtime())
 
 f = open('%s%s.csv'%(dir_name,file_name),'w')
 f.write('\n'.join(tags_list))
