@@ -96,7 +96,6 @@ def smart_mode():
         json_weather.get_Realtime_Weather_Info()
         json_list = json_weather.json_weather_result
 
-
 def changed_status(): # 기준에 따라 기기 상태 바꾸는 함수 작성하기
     pass
 
