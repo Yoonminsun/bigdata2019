@@ -10,7 +10,7 @@ g_AI_Mode = False
 
 json_list_weather=[]
 json_list_air=[]
-# xml, 웹크롤링(BeautifulSoup),웹크롤링(정규식) 각 1개씩 해보는 것도 좋음, 나머지는 json
+
 def terminate_ai_mode(ai_scheduler):
     if not ai_scheduler.isAlive():
         return
