@@ -10,8 +10,9 @@ def get_Request_URL(url):
 
     try:
         response = urllib.request.urlopen(req)
-        if response.getcode() == 200:
-            print('[%s] Url Request Success'%datetime.datetime.now())
+        if response.getcode() == 200 :
+            if __name__ == '__main__':
+                print('[%s] Url Request Success'%datetime.datetime.now())
             return response.read().decode('utf-8')
     except Exception as e:
         print(e)
@@ -46,7 +47,8 @@ def Make_Weather_Json(day_time):
     with open('동구_신암동_초단기예보조회_%s%s.json'%(yyyymmdd,day_time),'w',encoding='utf8') as outfile:
         retJson = json.dumps(json_weather_result, indent=4, sort_keys=True,ensure_ascii=False)
         outfile.write(retJson)
-    print('동구_신암동_초단기예보조회_%s_%s.json SAVED\n'%(yyyymmdd,day_time))
+    if __name__ == '__main__':
+        print('동구_신암동_초단기예보조회_%s_%s.json SAVED\n'%(yyyymmdd,day_time))
 
 def get_Realtime_Weather_Info():
     day_min_int=int(day_min)
@@ -73,4 +75,7 @@ y_coodinate = "91"
 
 if __name__ == '__main__':
     get_Realtime_Weather_Info()
-    print(json_weather_result)
+    last_time = json_weather_result[0]['fcstTime']
+    for result in json_weather_result:
+        if result['fcstTime'] == last_time:
+            print(result)
