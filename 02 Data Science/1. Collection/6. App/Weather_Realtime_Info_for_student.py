@@ -44,28 +44,40 @@ def Make_Weather_Json(day_time):
                                         'category':prn_data.get('category'),'fcstDate':prn_data.get('fcstDate'),
                                         'fcstTime':prn_data.get('fcstTime'),'fcstValue':prn_data.get('fcstValue'),
                                         'nx':prn_data.get('nx'),'ny':prn_data.get('ny')})
-    with open('동구_신암동_초단기예보조회_%s%s.json'%(yyyymmdd,day_time),'w',encoding='utf8') as outfile:
-        retJson = json.dumps(json_weather_result, indent=4, sort_keys=True,ensure_ascii=False)
-        outfile.write(retJson)
-    if __name__ == '__main__':
-        print('동구_신암동_초단기예보조회_%s_%s.json SAVED\n'%(yyyymmdd,day_time))
 
+def Make_Weather_CSV(day_time):
+    jsonData = get_Weather_URL(day_time)
+
+    if (jsonData['response']['header']['resultMsg'] == 'OK'):
+        for prn_data in jsonData['response']['body']['items']['item']:
+            csv_Data.append(str(prn_data.get('baseDate'))+','+str(prn_data.get('baseTime'))+','+
+                                        prn_data.get('category')+','+str(prn_data.get('fcstDate'))+','+
+                                        str(prn_data.get('fcstTime'))+','+str(prn_data.get('fcstValue'))+','+
+                                        str(prn_data.get('nx'))+','+str(prn_data.get('ny')))
+        f = open('동구_신암동_초단기예보조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
+        f.write('\n'.join(csv_Data))
+        f.close()
 def get_Realtime_Weather_Info():
     day_min_int=int(day_min)
     if 30 < day_min_int <=59:
         day_time = time.strftime("%H%M",time.localtime(time.time()))
-        print('\n<<실시간 기상정보 업데이트를 실시합니다!!>>\n'.center(30))
+        if __name__ == '__main__':
+            print('\n<<실시간 기상정보 업데이트를 실시합니다!!>>\n'.center(30))
         Make_Weather_Json(day_time)
+        Make_Weather_CSV(day_time)
     elif 0<=day_min_int<=30:
-            day_hour_int = int(day_hour)
-            day_hour_int = day_hour_int -1
-            revised_min = 60+(day_min_int-30)
-            day_time = '{0:0>2}'.format(day_hour_int)+str(revised_min)
+        day_hour_int = int(day_hour)
+        day_hour_int = day_hour_int -1
+        revised_min = 60+(day_min_int-30)
+        day_time = '{0:0>2}'.format(day_hour_int)+str(revised_min)
+        if __name__ == '__main__':
             print('\n<<가장 최신 기상정보 업데이트를 실시합니다!!>>\n'.center(30))
-            Make_Weather_Json(day_time)
+        Make_Weather_Json(day_time)
+        Make_Weather_CSV(day_time)
     return day_min_int
 
 json_weather_result=[]
+csv_Data=['baseDate,baseTime,category,fcstDate,fcstTime,fcstValue,nx,ny']
 yyyymmdd = time.strftime("%Y%m%d")
 day_time = time.strftime("%H%M")
 day_hour = time.strftime("%H")
@@ -75,7 +87,9 @@ y_coodinate = "91"
 
 if __name__ == '__main__':
     get_Realtime_Weather_Info()
-    last_time = json_weather_result[0]['fcstTime']
-    for result in json_weather_result:
-        if result['fcstTime'] == last_time:
-            print(result)
+    # last_time = json_weather_result[0]['fcstTime']
+    # for result in json_weather_result:
+    #     if result['fcstTime'] == last_time:
+    #         print(result)
+    # print(json_weather_result)
+    # print(csv_Data)

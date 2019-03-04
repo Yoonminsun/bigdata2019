@@ -8,7 +8,6 @@ access_key='oQSz2oLeE2%2FyKkC5Bvap%2ByKJ7NjXePjiinT9FimEL9PX9o0aEMHImBYj3NVIi9Ar
 
 def get_Request_URL(url):
     req = Request(url)
-
     try:
         response = urlopen(req)
         if response.getcode() == 200 :
@@ -19,7 +18,6 @@ def get_Request_URL(url):
         print(e)
         print('[%s] Error for URL : %s'%(datetime.datetime.now(),url))
         return None
-
 def get_Air_URL():
     end_point = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst'
     parameters = '?_returnType=json&ServiceKey='+access_key
@@ -32,29 +30,26 @@ def get_Air_URL():
         return None
     else:
         return json.loads(retData)
-
-
-def Make_Air_Json():
+def Make_Air_json_csv():
     jsonData = get_Air_URL()
     yyyymmdd = time.strftime("%Y%m%d")
     day_time = time.strftime("%H%M")
-
     if(jsonData['list']):
         for prn_data in jsonData['list']:
+            csv_air_result.append(prn_data['cityName'] + ',' + prn_data['dataTime']
+                                  + ',' + prn_data['pm10Value'] + ',' + prn_data['pm25Value'])
             if prn_data['cityName'] == cityName:
                 json_air_result.append({'dataTime':prn_data['dataTime'],'pm10Value':prn_data['pm10Value'],
                                         'pm25Value':prn_data['pm25Value']})
-    with open('동구_실시간_미세먼지농도조회_%s%s.json'%(yyyymmdd,day_time),'w',encoding='utf8') as outfile:
-        retJson = json.dumps(json_air_result, indent=4, sort_keys=True,ensure_ascii=False)
-        outfile.write(retJson)
-    if __name__ == '__main__':
-        print('동구_실시간_미세먼지농도조회_%s_%s.json SAVED\n'%(yyyymmdd,day_time))
+        f = open('동구_실시간_미세먼지농도조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
+        f.write('\n'.join(csv_air_result))
+        f.close()
     return json_air_result
 json_air_result=[]
+csv_air_result=['도시명,dataTime,미세먼지농도,초미세먼지농도']
 sidoName = '대구'
 cityName = '동구'
 
 if __name__ == '__main__':
-    Make_Air_Json()
-    print(json_air_result)
+    Make_Air_json_csv()
 
