@@ -10,10 +10,19 @@ g_Gas_Valve = False
 g_Balcony_Windows = False
 g_Door = False
 g_AI_Mode = False
+g_Smul_Mode=False
 
 json_list_weather=[]
 json_list_air=[]
 
+def g_value_false():
+    global g_Radiator,g_AI_Mode,g_Air_Conditioner,g_Gas_Valve,g_Balcony_Windows,g_Door
+    g_Radiator = False
+    g_Air_Conditioner = False
+    g_Gas_Valve = False
+    g_Balcony_Windows = False
+    g_Door = False
+    g_AI_Mode = False
 def terminate_ai_mode(ai_scheduler):
     if not ai_scheduler.isAlive():
         return
@@ -25,23 +34,39 @@ def terminate_ai_mode(ai_scheduler):
         ctypes.pythonapi.PyThreadState_SetAsyncExc(ai_scheduler.ident,None)
         raise SystemError('PyhreadState_SetAsyncExc failed')
 def print_main_menu():
-    print('\n1. 장비상태 확인')
-    print('2. 장비제어')
-    print('3. 스마트모드')
-    print('4. TV 실행')
-    print('5. 프로그램 종료')
+    print('1. 기상정보 조회')
+    print('2. 장비상태 확인')
+    print('3. 장비제어')
+    print('4. 스마트모드')
+    print('5. TV 실행')
+    print('6. 시뮬레이션 모드')
+    print('7. 프로그램 종료')
 def temperature_room():
     for data in json_list_weather:
         if data['category'] == 'T1H':
-            return data['fcstValue']
+            return int(data['fcstValue'])
 def temperature_change_up():
-    global temperature
-    temperature+=1
-    print(temperature)
+    global temperature,g_AI_Mode
+    while True:
+        if g_Radiator == False:
+            break
+        else:
+            time.sleep(2)
+            temperature = int(temperature)
+            temperature+=1
+            if g_AI_Mode==True:
+                changed_status()
 def temperature_change_down():
-    global temperature
-    temperature -= 1
-    print(temperature)
+    global temperature,g_AI_Mode
+    while True:
+        if g_Air_Conditioner == False:
+            break
+        else:
+            time.sleep(2)
+            temperature = int(temperature)
+            temperature -= 1
+            if g_AI_Mode==True:
+                changed_status()
 def print_device_status(device_name, device_status):
     print('%s 상태: '%device_name,end='')
     if device_status == True:print('작동')
@@ -52,6 +77,7 @@ def check_device_status():
     print_device_status('가스밸브',g_Gas_Valve)
     print_device_status('발코니(베란다) 창문',g_Balcony_Windows) # 비,미세먼지,난방기,에어컨
     print_device_status('출입문 상태',g_Door)
+    print('현재 실내기온:',temperature,'\n')
 def print_device_menu():
     print('\n상태 변경할 기기를 선택하세요.')
     print('1. 난방기')
@@ -62,39 +88,36 @@ def print_device_menu():
 def control_R_A(RorA):
     global g_Radiator,g_Air_Conditioner
     if RorA=='R':
-        Radiator_scheduler = threading.Thread(target=temperature_change_up)
-
-        if g_Radiator==False:
-            Radiator_scheduler.daemon=True
-            Radiator_scheduler.start()
-            g_Radiator=True
+        g_Radiator = not g_Radiator
+        g_Radiator_scheduler = threading.Thread(target=temperature_change_up)
+        if g_Radiator==True:
+            g_Radiator_scheduler.daemon=True
+            g_Radiator_scheduler.start()
         else:
-            while Radiator_scheduler.is_alive():
+            while g_Radiator_scheduler.is_alive():
                 try:
-                    terminate_ai_mode(Radiator_scheduler)
+                    terminate_ai_mode(g_Radiator_scheduler)
                 except:
                     pass
-            g_Radiator=False
     elif RorA=='A':
-        Air_Conditioner_scheduler = threading.Thread(target=temperature_change_down)
-        if g_Air_Conditioner==False:
-            Air_Conditioner_scheduler.daemon=True
-            Air_Conditioner_scheduler.start()
-            g_Air_Conditioner=True
+        g_Air_Conditioner = not g_Air_Conditioner
+        g_Air_Conditioner_scheduler = threading.Thread(target=temperature_change_down)
+        if g_Air_Conditioner ==True:
+            g_Air_Conditioner_scheduler .daemon=True
+            g_Air_Conditioner_scheduler .start()
         else:
-            while Air_Conditioner_scheduler.is_alive():
+            while g_Air_Conditioner_scheduler.is_alive():
                 try:
-                    terminate_ai_mode(Air_Conditioner_scheduler)
+                    terminate_ai_mode(g_Air_Conditioner_scheduler )
                 except:
                     pass
-            g_Air_Conditioner=False
-
 def control_device():
     global g_Radiator,g_Gas_Valve,g_Balcony_Windows,g_Door,g_Air_Conditioner
 
     check_device_status()
     print_device_menu()
     menu_num = int(input('번호를 입력하세요: '))
+    print()
 
     if menu_num ==1: control_R_A('R')
     elif menu_num ==2: control_R_A('A')
@@ -102,13 +125,15 @@ def control_device():
     elif menu_num ==4: g_Balcony_Windows = not g_Balcony_Windows
     elif menu_num ==5: g_Door = not g_Door
     check_device_status()
+    if g_AI_Mode==True:
+        changed_status()
 def get_realtime_weather_info():
     global json_list_weather,json_list_air
     while True:
         if g_AI_Mode == False:
             break
         else:
-            time.sleep(3)
+            time.sleep(3600)
             json_weather.get_Realtime_Weather_Info()
             json_list_weather = json_weather.json_weather_result
             json_list_air = json_air.Make_Air_json_csv()
@@ -117,12 +142,13 @@ def smart_mode():
     global g_AI_Mode
     print('1. 인공지능 모드 조회')
     print('2. 인공지능 모드 상태 변경')
-    print('3. 실시간 기상정보 Update')
+    if g_Smul_Mode==False:
+        print('3. 실시간 기상정보 Update')
     menu_num = int(input('메뉴를 선택하세요: '))
     if menu_num==1:
         print('현재 인공지능 모드:',end='')
-        if g_AI_Mode == True: print('작동')
-        else: print('중지')
+        if g_AI_Mode == True: print('작동\n')
+        else: print('중지\n')
     elif menu_num==2:
         ai_scheduler = threading.Thread(target=get_realtime_weather_info)
         g_AI_Mode = not g_AI_Mode
@@ -130,36 +156,35 @@ def smart_mode():
         if g_AI_Mode == True:
             ai_scheduler.daemon = True
             ai_scheduler.start()
-            print('인공지능 모드 작동')
+            print('인공지능 모드 작동\n')
+            changed_status()
         else:
             while ai_scheduler.is_alive():
                 try:
                     terminate_ai_mode(ai_scheduler)
                 except:
                     pass
-            print('인공지능 모드 정지')
+            print('인공지능 모드 정지\n')
     elif menu_num==3:
         global json_list_weather,json_list_air
         json_weather.get_Realtime_Weather_Info()
         json_list_weather = json_weather.json_weather_result
         json_list_air = json_air.Make_Air_json_csv()[0]
-def changed_status(): # 기준에 따라 기기 상태 바꾸는 함수 작성하기
+def changed_status(): # 기준에 따라 기기 상태 바꾸는 함수
     last_time = json_list_weather[0]['fcstTime']
-    global g_Radiator,g_Balcony_Windows,g_Air_Conditioner
-
+    global g_Radiator,g_Balcony_Windows,g_Air_Conditioner,temperature
     if temperature<=5 and g_Radiator==False:
-        g_Radiator = True
+        control_R_A('R')
         print('기온이 5도 이하 이므로 난방기를 작동합니다.')
     elif temperature >= 10 and g_Radiator == True:  # 기온 10도 이상, 난방기 작동시 정지
-        g_Radiator = False
+        control_R_A('R')
         print('기온이 10도 이상이므로 난방기를 정지합니다.')
     if temperature>= 30 and g_Air_Conditioner == False:  # 기온 30도 이상, 에어컨 정지시 작동
-        g_Air_Conditioner = True
+        control_R_A('A')
         print('기온이 30도 이상이므로 에어컨을 작동합니다.')
     elif temperature <= 18 and g_Air_Conditioner == True:  # 기온 18도 이하, 에어컨 작동시 정지
-        g_Air_Conditioner = False
+        control_R_A('A')
         print('기온이 18도 이하이므로 에어컨을 정지합니다.')
-
     for result in json_list_weather:
         if g_Balcony_Windows==True:
             if result['fcstTime'] == last_time and result['category'] == 'RN1': # 창문
@@ -192,7 +217,7 @@ def air_info_check():
     elif pm10>=151 or pm25>=101:
         print('미세먼지 예보 등급: 매우나쁨')
 def TV_on():
-    print('\n1. 미세먼지 확인\n2. 버스 도착정보 조회\n3. 유튜브 검색/재생\n4. 음악 차트 조회')
+    print('1. 미세먼지 확인\n2. 버스 도착정보 조회\n3. 유튜브 검색/재생\n4. 음악 차트 조회')
     menu = int(input('실행할 메뉴를 선택하세요: '))
     if menu==1:
         air_info_check()
@@ -210,28 +235,104 @@ def TV_on():
             return
         elif menu_music==2:
             return
-
+def Simulation_mode():
+    global json_list_weather,json_list_air,g_Smul_Mode,temperature
+    g_Smul_Mode=True
+    csv_list_weather=[]
+    csv_list_air=[]
+    json_list_weather=[]
+    json_list_air=[]
+    in_dic = {}
+    f = open('./시뮬레이션_초단기예보조회.csv','r')
+    for data in f.readlines():
+        csv_list_weather.append(data.split(','))
+    str_key = csv_list_weather[0]
+    for index in range(1,len(csv_list_weather)):
+        for num in range(8):
+            in_dic[str_key[num]] = csv_list_weather[index][num]
+            if num==7:
+                in_dic[str_key[num].rstrip()] = csv_list_weather[index][num].rstrip()
+        json_list_weather.append(in_dic)
+        in_dic={}
+    f.close()
+    f = open('./시뮬레이션_미세먼지농도조회.csv','r')
+    for data in f.readlines():
+        csv_list_air.append(data.split(','))
+    for index in range(1,len(csv_list_air)):
+        if csv_list_air[index][0]==sidoName:
+            in_dic['pm10Value'] = csv_list_air[index][2]
+            in_dic['pm25Value'] = csv_list_air[index][3].rstrip()
+            json_list_air.append(in_dic)
+            break
+    temperature = temperature_room()
+def get_weather_air_info(): #시뮬->기본으로 돌아갈때 다시 정보 받아오는 함수
+    global json_list_weather,json_list_air,temperature
+    json_weather.get_Realtime_Weather_Info()
+    json_list_weather = json_weather.json_weather_result
+    json_list_air = json_air.Make_Air_json_csv()
+    temperature = temperature_room()
+def print_weather_air_info():
+    global json_list_air,json_list_weather,temperature
+    last_time = json_list_weather[0]['fcstTime']
+    for data in json_list_weather:
+        if data['fcstTime'] == last_time:
+            if data['category'] == 'T1H':
+                print('- 외부 기온:%s'%data['fcstValue'],end=' ')
+            elif data['category'] =='RN1':
+                print('- 강수량:%s'%data['fcstValue'])
+    pm10 = int(json_list_air[0]['pm10Value'])
+    pm25 = int(json_list_air[0]['pm25Value'])
+    print('\n- 미세먼지 농도:%d(㎍/㎥\n- 초미세먼지 농도:%d(㎍/㎥)' % (pm10, pm25))
+    if pm10 <= 30 or pm25 <= 15:
+        print('- 미세먼지 예보 등급: 좋음')
+    elif pm10 <= 80 or pm25 <= 50:
+        print('- 미세먼지 예보 등급: 보통')
+    elif pm10 <= 150 or pm25 <= 100:
+        print('- 미세먼지 예보 등급: 나쁨')
+    elif pm10 >= 151 or pm25 >= 101:
+        print('- 미세먼지 예보 등급: 매우나쁨')
+    print('- 내부 기온:%s'%temperature)
 print('<스마트 홈네트워크 시뮬레이션 프로그램 ver 1.0>')
 json_weather = Weather_Realtime_Info_for_student
-json_weather.get_Realtime_Weather_Info()
-json_list_weather = json_weather.json_weather_result
 json_air = Air_Pollution_Info
+
 json_Bus = Bus_stop_info
 play_Youtube = Youtube_data_api
-temperature = temperature_room()
+sidoName = '동구'
 while True:
-    print_main_menu()
-    try:
-        menu_num = int(input('메뉴를 선택하세요: '))
-    except:
-        menu_num = int(input('메뉴를 다시 선택하세요: '))
-    if menu_num==1:
-        check_device_status()
-    elif menu_num==2:
-        control_device()
-    elif menu_num==3:
-        smart_mode()
-    elif menu_num==4:
-        TV_on()
-    elif menu_num==5:
-        break
+    if not g_Smul_Mode:
+        get_weather_air_info()
+        print_main_menu()
+        try:
+            menu_num = int(input('메뉴를 선택하세요: '))
+            print()
+        except:
+            menu_num = int(input('메뉴를 다시 선택하세요: '))
+        if menu_num==1:
+            print_weather_air_info()
+        elif menu_num==2:
+            check_device_status()
+        elif menu_num==3:
+            control_device()
+        elif menu_num==4:
+            smart_mode()
+        elif menu_num==5:
+            TV_on()
+        elif menu_num==6:
+            g_value_false()
+            Simulation_mode()
+        elif menu_num==7:
+            break
+    else:
+        print('\n<< 시뮬레이션 모드 작동 중 >>')
+        menu_num = int(input('1. 장비제어\n2. 스마트모드변경\n3. 시뮬레이션 기상정보 조회\n4. 시뮬레이션 종료\n메뉴를 선택하세요: '))
+        print()
+        if menu_num==1:
+            control_device()
+        elif menu_num==2:
+            smart_mode()
+        elif menu_num==3:
+            print_weather_air_info()
+        elif menu_num==4:
+            g_value_false()
+            g_Smul_Mode = False
