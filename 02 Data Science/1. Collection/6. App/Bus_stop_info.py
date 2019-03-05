@@ -96,13 +96,15 @@ def Print_arrive_time():
     global json_arrive_result
     print('%s 정류장에서 운행하는 버스 목록' % stopName)
     for stop in json_arrive_result: print(stop['routeno'],end='  ')
+    print()
     busRouteno = int(input('\n조회할 버스 번호를 입력하세요: '))
     for bus_data in json_arrive_result:
         if bus_data['routeno'] == busRouteno:
             print('%s 버스\n- 도착 예상 시간:%d분%d초' % (busRouteno,bus_data['arrtime']//60,bus_data['arrtime']%60))
             print('- 남은 정류장 수:%s\n- 차량 유형:%s'%(bus_data['arrprevstationcnt'],bus_data['vehicletp']))
+            print()
             return
-    print('%d번 버스의 도착 예정 정보가 없습니다.'%busRouteno)
+    print('%d번 버스의 도착 예정 정보가 없습니다.\n'%busRouteno)
 
 cityName = '대구광역시'
 stopName = ''
