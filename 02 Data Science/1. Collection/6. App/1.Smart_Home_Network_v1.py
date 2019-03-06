@@ -74,25 +74,27 @@ def temperature_room():
         if data['category'] == 'T1H':
             return int(data['fcstValue'])
 def temperature_change_up():
-    global temperature,g_AI_Mode
+    global temperature,g_AI_Mode,g_Radiator
     while True:
         if g_Radiator == False:
             break
         else:
-            time.sleep(5)
+            time.sleep(2)
             # temperature = int(temperature)
-            temperature+=1
+            if g_Radiator==True:
+                temperature+=1
             if g_AI_Mode==True:
                 changed_status()
 def temperature_change_down():
-    global temperature,g_AI_Mode
+    global temperature,g_AI_Mode,g_Air_Conditioner
     while True:
         if g_Air_Conditioner == False:
             break
         else:
-            time.sleep(5)
+            time.sleep(1800)
             # temperature = int(temperature)
-            temperature -= 1
+            if g_Air_Conditioner==True:
+                temperature -= 1
             if g_AI_Mode==True:
                 changed_status()
 def control_temperature(RorA):
@@ -126,23 +128,25 @@ def humidity_room():
         if data['category'] == 'REH':
             return int(data['fcstValue'])
 def humidity_change_up():
-    global humidity, g_AI_Mode
+    global humidity, g_AI_Mode,g_Humidifier
     while True:
         if g_Humidifier == False:
             break
         else:
-            time.sleep(5)
-            humidity += 1
+            time.sleep(1800)
+            if g_Humidifier==True:
+                humidity += 1
             if g_AI_Mode == True:
                 changed_status()
 def humidity_change_down():
-    global humidity, g_AI_Mode
+    global humidity, g_AI_Mode,g_Dehumidifier
     while True:
         if g_Humidifier == False:
             break
         else:
-            time.sleep(5)
-            humidity -= 1
+            time.sleep(1800)
+            if g_Dehumidifier==True:
+                humidity -= 1
             if g_AI_Mode == True:
                 changed_status()
 def control_humidity(HorD):
@@ -242,18 +246,18 @@ def changed_status(): # 기준에 따라 기기 상태 바꾸는 함수
     elif temperature <= 18 and g_Air_Conditioner == True:  # 기온 18도 이하, 에어컨 작동시 정지
         control_temperature('A')
         print('기온이 18℃ 이하이므로 에어컨을 정지합니다.')
-    if humidity<20 and g_Humidifier==False:
+    if humidity<30 and g_Humidifier==False:
         control_humidity('H')
-        print('습도가 20% 미만이므로 가습기를 작동합니다.')
-    elif humidity>60 and g_Humidifier==True:
+        print('습도가 30% 미만이므로 가습기를 작동합니다.')
+    elif humidity>50 and g_Humidifier==True:
         control_humidity('H')
-        print('습도가 60% 초과이므로 가습기를 정지합니다.')
-    if humidity>80 and g_Dehumidifier==False:
+        print('습도가 50% 초과이므로 가습기를 정지합니다.')
+    if humidity>60 and g_Dehumidifier==False:
         control_humidity('D')
-        print('습도가 80% 초과이므로 제습기를 작동합니다.')
-    elif humidity<30 and g_Dehumidifier==True:
+        print('습도가 60% 초과이므로 제습기를 작동합니다.')
+    elif humidity<40 and g_Dehumidifier==True:
         control_humidity('D')
-        print('습도가 30% 미만이므로 제습기를 정지합니다.')
+        print('습도가 40% 미만이므로 제습기를 정지합니다.')
     for result in json_list_weather:
         if g_Balcony_Windows==True:
             if result['fcstTime'] == last_time and result['category'] == 'RN1': # 창문
