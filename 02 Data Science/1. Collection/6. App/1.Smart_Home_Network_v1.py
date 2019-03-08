@@ -4,6 +4,7 @@ import Bus_stop_info
 import Youtube_data_api
 import Genie_music_crawling_re
 import threading,time,ctypes,json
+import pandas as pd
 g_Radiator = False
 g_Air_Conditioner = False
 g_Balcony_Windows = False
@@ -296,6 +297,7 @@ def TV_on():
 def Simulation_mode():
     global json_list_weather,json_list_air,temperature,humidity,g_Smul_Mode
     g_Smul_Mode=True
+    input_file = './시뮬레이션_초단기예보조회.json'
     json_list_weather=[]
     json_list_air=[]
     with open('./시뮬레이션_초단기예보조회.json','r',encoding='UTF8') as weatherfile:

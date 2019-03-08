@@ -2,6 +2,7 @@ import urllib.request
 import datetime
 import json
 import time
+import pandas as pd
 
 weather_time=''
 # access_key='oQSz2oLeE2%2FyKkC5Bvap%2ByKJ7NjXePjiinT9FimEL9PX9o0aEMHImBYj3NVIi9ArzQx4avj62hoXKqANLvj%2FcA%3D%3D'
