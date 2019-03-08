@@ -1,0 +1,30 @@
+global json_list_weather,json_list_air,g_Smul_Mode,temperature,humidity
+    g_Smul_Mode=True
+    csv_list_weather=[]
+    csv_list_air=[]
+    json_list_weather=[]
+    json_list_air=[]
+    in_dic = {}
+    f = open('./시뮬레이션_초단기예보조회.csv','r')
+    for data in f.readlines():
+        csv_list_weather.append(data.split(','))
+    str_key = csv_list_weather[0]
+    for index in range(1,len(csv_list_weather)):
+        for num in range(8):
+            in_dic[str_key[num]] = csv_list_weather[index][num]
+            if num==7:
+                in_dic[str_key[num].rstrip()] = csv_list_weather[index][num].rstrip()
+        json_list_weather.append(in_dic)
+        in_dic={}
+    f.close()
+    f = open('./시뮬레이션_미세먼지농도조회.csv','r')
+    for data in f.readlines():
+        csv_list_air.append(data.split(','))
+    for index in range(1,len(csv_list_air)):
+        if csv_list_air[index][0]==sidoName:
+            in_dic['pm10Value'] = csv_list_air[index][2]
+            in_dic['pm25Value'] = csv_list_air[index][3].rstrip()
+            json_list_air.append(in_dic)
+            break
+    temperature = temperature_room()
+    humidity = humidity_room()
