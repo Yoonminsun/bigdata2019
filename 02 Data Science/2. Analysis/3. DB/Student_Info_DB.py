@@ -4,8 +4,21 @@ from xlwt import Workbook
 
 input_file = 'Student_Info_DB_Scheme.xlsx'
 
-con = MySQLdb.connect(host='localhost',port=3306,db='my_suppliers',user='open_source',passwd='1111')
+con = MySQLdb.connect(host='localhost',port=3306,db='my_suppliers',user='open_source',passwd='1111',charset='utf8mb4')
 c = con.cursor()
+
+create_table = """CREATE TABLE IF NOT EXISTS Students
+                  (ID VARCHAR(20),
+                  Name VARCHAR(20),
+                  Sex VARCHAR(10),
+                  Age FLOAT,
+                  Major VARCHAR(20),
+                  Languages VARCHAR(40),
+                  High VARCHAR(20),
+                  Middle VARCHAR(20),
+                  Low VARCHAR(20));"""
+c.execute(create_table)
+con.commit()
 
 workbook = open_workbook(input_file)
 worksheet = workbook.sheet_by_name('Sheet1')
@@ -20,25 +33,34 @@ def DB_Insert():
     # for each in range(1,worksheet.nrows):
     #     print(worksheet.row(each))
     #     print('name: ',worksheet.row(each)[1].value)
+        # print(worksheet.row(each)[6].ctype)
     data=[]
-    for row_index in range(1,worksheet.nrows):
-        for column_index in range(1,worksheet.ncols):
-            if not worksheet.cell_value(row_index,column_index):
+    for row in range(1,worksheet.nrows):
+        for each in worksheet.row(row):
+            if not each.value:
                 data.append('없음')
             else:
-                data.append(worksheet.cell_value(row_index,column_index))
+                data.append(each.value)
         print(data)
-        query = "INSERT INTO Suppliers VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);"
-        c.execute(query.encode('utf8'), data)
+        # (ID, Name, Sex, Age, Major, Languages, High, Middle, Low)
+        query = """INSERT INTO Students VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s);"""
+        c.execute(query,data)
         data=[]
     con.commit()
-    c.execute("SELECT * FROM Suppliers")
+    c.execute("SELECT * FROM Students")
     rows = c.fetchall()
     for row in rows:
         row_list_output = []
         for column_index in range(len(row)):
             row_list_output.append(str(row[column_index]))
         print(row_list_output)
+    # c.execute("SELECT * FROM Students")
+    # rows = c.fetchall()
+    # for row in rows:
+    #     row_list_output = []
+    #     for column_index in range(len(row)):
+    #         row_list_output.append(str(row[column_index]))
+    #     print(row_list_output)
 def Count_Student_Info():
     total_male = 0
     total_female = 0
