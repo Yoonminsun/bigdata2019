@@ -17,6 +17,9 @@ def Print_Main_input():
     return menu
 
 def DB_Insert():
+    # for each in range(1,worksheet.nrows):
+    #     print(worksheet.row(each))
+    #     print('name: ',worksheet.row(each)[1].value)
     data=[]
     for row_index in range(1,worksheet.nrows):
         for column_index in range(1,worksheet.ncols):
