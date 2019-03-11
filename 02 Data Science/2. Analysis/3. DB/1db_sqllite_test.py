@@ -9,8 +9,8 @@ cursor = con.execute("SELECT * FROM sales")
 rows = cursor.fetchall()
 
 # Count the number of rows in the output
-row_counter = 0
+row_counter=0
 for row in rows:
     print(row)
-    row_counter += 1
-print("Number of rows: {}" .format(row_counter))
+    row_counter+=1
+print('Number of rows: {}'.format(row_counter))
