@@ -209,7 +209,7 @@ def Update_Student():
     print('3. 나이: %d'%int(update_student[3]))
     print('4. 전공: %s'%update_student[4])
     if not update_student[5]:
-        print('5. 사용가능한 컴퓨터 언어: 없음')
+        print('5. 사용가능한 컴퓨터 언어: 없음 (수정시 추가)')
     else:
         print('사용 가능한 컴퓨터 언어')
         languages = update_student[5].split(',')
@@ -228,7 +228,8 @@ def Update_Student():
             index+=2
 
     choice = int(input('수정할 항목의 번호를 입력하세요: '))
-    modify = input('수정할 값을 입력하세요: ')
+    if not choice ==5 and update_student[5]:
+        modify = input('수정할 값을 입력하세요: ')
 
     if choice ==1:
         c.execute("UPDATE Students SET Name='%s' WHERE ID='%s'"%(modify,update_student_ID))
@@ -239,26 +240,74 @@ def Update_Student():
     elif choice ==4:
         c.execute("UPDATE Students SET Major='%s' WHERE ID='%s'" % (modify, update_student_ID))
     else:
-        if (choice-5)%2==0:
-            modify = str(update_student[5]).replace(languages[(choice-5)//2],modify)
-            c.execute("UPDATE Students SET Languages='%s' WHERE ID='%s'"%(modify,update_student_ID))
-        elif (choice-6)%2==0:
-            index = (choice - 6) // 2
-            modify_list1 = str(update_student[level[index]])
-            print(modify_list1)
-            # modify_list1.remove(languages[index])
-            # print(modify_list1)
-            # if modify=='상':
-            # elif modify=='중':
-            # elif modify=='하':
+        if choice ==5 and not update_student[5]:
+            while True:
+                lang=[]
+                high=[]
+                middle=[]
+                low=[]
+                lang_name = input('  > 언어 이름(종료는 Enter 입력):')
+                if not lang_name: break
+                level = input('  > 수준(상,중,하): ')
+                lang.append(lang_name)
+                if level == '상':
+                    high.append(lang_name)
+                elif level == '중':
+                    middle.append(lang_name)
+                elif level == '하':
+                    low.append(lang_name)
 
-
-
+                lang = ','.join(lang)
+                high = ','.join(high)
+                middle = ','.join(middle)
+                low = ','.join(low)
+                c.execute("UPDATE Students SET Languages='%s', High='%s', Middle='%s', Low='%s' WHERE ID='%s'"
+                          % (lang, high,middle,low,update_student_ID))
+        else:
+            if (choice-5)%2==0:
+                modify_str = str(update_student[5]).replace(languages[(choice-5)//2],modify)
+                c.execute("UPDATE Students SET Languages='%s' WHERE ID='%s'"%(modify_str,update_student_ID))
+                if languages[(choice-5)//2] in update_student[6]:
+                    modify_str = str(update_student[6]).replace(languages[(choice-5)//2],modify)
+                    c.execute("UPDATE Students SET High='%s' WHERE ID='%s'"%(modify_str,update_student_ID))
+                elif languages[(choice-5)//2] in update_student[7]:
+                    modify_str = str(update_student[7]).replace(languages[(choice-5)//2],modify)
+                    c.execute("UPDATE Students SET Middle='%s' WHERE ID='%s'"%(modify_str,update_student_ID))
+                elif languages[(choice-5)//2] in update_student[8]:
+                    modify_str = str(update_student[8]).replace(languages[(choice-5)//2],modify)
+                    c.execute("UPDATE Students SET Low='%s' WHERE ID='%s'"%(modify_str,update_student_ID))
+            elif (choice-6)%2==0:
+                index = (choice - 6) // 2
+                modify_1 = str(update_student[level[index]])
+                modify_1 = modify_1.replace(languages[index],'').strip().strip(',')
+                if level[index]==6:
+                    c.execute("UPDATE Students SET High ='%s' WHERE ID='%s'" % (modify_1, update_student_ID))
+                elif level[index]==7:
+                    c.execute("UPDATE Students SET Middle ='%s' WHERE ID='%s'" % (modify_1, update_student_ID))
+                elif level[index]==8:
+                    c.execute("UPDATE Students SET Low ='%s' WHERE ID='%s'"%(modify_1,update_student_ID))
+                if modify=='상':
+                    modify = str(update_student[6])+','+languages[index]
+                    c.execute("UPDATE Students SET High='%s' WHERE ID='%s'"%(modify,update_student_ID))
+                elif modify=='중':
+                    modify = str(update_student[7]) + ',' + languages[index]
+                    c.execute("UPDATE Students SET Middle='%s' WHERE ID='%s'" % (modify, update_student_ID))
+                elif modify=='하':
+                    modify = str(update_student[8]) + ',' + languages[index]
+                    c.execute("UPDATE Students SET Low='%s' WHERE ID='%s'" % (modify, update_student_ID))
     con.commit()
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
     for row in rows:
         print(row)
+def Delete_Student():
+    global rows
+    delete_ID = input('삭제할 ID를 입력하세요: ')
+    c.execute("DELETE FROM Students WHERE ID='%s'" %delete_ID)
+    print('삭제되었습니다.')
+    con.commit()
+    c.execute("SELECT * FROM Students")
+    rows = c.fetchall()
 DB_Insert()
 menu = Print_Main_input()
 while True:
@@ -286,8 +335,10 @@ while True:
             menu = Print_Main_input()
     elif menu==4:
         Update_Student()
+        menu = Print_Main_input()
     elif menu==5:
-        pass
+        Delete_Student()
+        menu = Print_Main_input()
     elif menu==6:
         print('학생 정보 분석 완료!')
         exit()
