@@ -4,7 +4,7 @@ from xlwt import Workbook
 
 input_file = 'Student_Info_DB_Scheme.xlsx'
 
-con = MySQLdb.connect(host='localhost',port=3306,db='my_suppliers',user='open_source',passwd='1111',charset='utf8mb4')
+con = MySQLdb.connect(host='localhost',port=3306,db='student_info_1',user='open_source',passwd='1111',charset='utf8mb4')
 c = con.cursor()
 
 workbook = open_workbook(input_file)
@@ -14,18 +14,6 @@ delete_table = "delete from Students"
 c.execute(delete_table)
 con.commit()
 
-create_table = """CREATE TABLE IF NOT EXISTS Students
-                  (ID VARCHAR(20),
-                  Name VARCHAR(20),
-                  Sex VARCHAR(10),
-                  Age FLOAT,
-                  Major VARCHAR(20),
-                  Languages VARCHAR(40),
-                  High VARCHAR(20),
-                  Middle VARCHAR(20),
-                  Low VARCHAR(20));"""
-c.execute(create_table)
-con.commit()
 rows=()
 id_num=0
 
@@ -70,6 +58,10 @@ def Count_Student_Info():
     list_20=[]
     list_30=[]
     list_40=[]
+    # c.execute("SELECT * From Students WHERE Sex='남'")
+    # count = c.fetchall()
+    # total_male = len(count)
+    # c.execute("SELECT Name,Age From Students")
     for row in rows:
         if row[2]=='남':
             total_male+=1
@@ -84,7 +76,7 @@ def Count_Student_Info():
         elif 40<=int(row[3])<50:
             total_40+=1
             list_40.append('%s:%s'%(row[1],int(row[3])))
-        if '컴퓨터 공학' in row[4] or '통계' in row[4]:
+        if '컴퓨터 공학' in row[4] or'컴퓨터공학' in row[4] or '통계' in row[4]:
             total_major+=1
         if row[5]:
             total_lang+=1
@@ -153,6 +145,9 @@ def Input_Student():
 def Search_Student_Each(menu):
     search_str = input('검색어를 입력하세요: ')
     search_row=[]
+    # if menu==1:
+    #     c.execute("SELECT * FROM Students WHERE ID='%s'"%search_str)
+    #     search_row.append(c.fetchall())
     for row in rows:
         if menu==1 and row[0]==search_str:
             search_row.append(row)
