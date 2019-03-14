@@ -1,6 +1,5 @@
 import MySQLdb
 from xlrd import open_workbook
-from xlwt import Workbook
 
 input_file_1 = 'Basic_Student_Info.xlsx'
 input_file_2 = 'Student_Language.xlsx'
@@ -22,6 +21,7 @@ con.commit()
 rows=()
 id_num=0
 
+## db 에 xlsx 파일 읽어와 insert
 def DB_Insert():
     global rows,id_num
     data=[]
@@ -40,22 +40,32 @@ def DB_Insert():
     con.commit()
     c.execute("SELECT * FROM Basic_Student_Info b LEFT JOIN Student_Language s USING(Student_ID) ORDER BY Student_ID")
     rows = c.fetchall()
-    id_num = int(rows[len(rows) - 1][0][3:]) + 1
+    # c.execute("SELECT * FROM Basic_Student_Info")
+    # rows = c.fetchall()
+    id_num = int(rows[len(rows)-1][0][3:])+1
+    # print(id_num)
+## 메인 메뉴
 def Print_Main_input():
     print('[ 메인 메뉴 ]')
     print('1. 요약 정보\n2. 입력\n3. 조회\n4. 수정\n5. 삭제\n6. 종료')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 조회 서브 메뉴
 def Print_Search_input():
     print('< 조회 서브 메뉴 >')
     print('1. 개별 학생 조회\n2. 전체 학생 조회\n3. 상위 메뉴')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 검색 조건 메뉴
 def Print_Search_each_input():
     print('< 검색 조건 >')
     print('1. ID\n2. 이름\n3. 나이\n4. 전공\n5. 컴퓨터 언어 명\n6. 컴퓨터 언어 학습 기간\n7. 컴퓨터 언어 레벨\n8. 상위메뉴')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 요약정보에 쓰일 정보 count
 def Count_Student_Info():
     list_20=[]
     list_30=[]
@@ -97,6 +107,8 @@ def Count_Student_Info():
     list_info = [total,total_male,total_female,total_major,total_lang,total_high,total_python,
                  total_20,total_30,total_40]
     return list_info,list_20,list_30,list_40
+
+## 요약 정보 출력
 def Print_Info(list_info,list_20,list_30,list_40):
     print('< 요약 정보 >')
     print('* 전체 학생수: %d명'%list_info[0])
@@ -115,6 +127,8 @@ def Print_Info(list_info,list_20,list_30,list_40):
     print(list_30)
     print('  - 40대: %d명 (%.1f%%) ' % (list_info[9], (list_info[9] / list_info[0]) * 100), end='')
     print(list_40)
+
+## 학생 정보 입력
 def Input_Student():
     global rows,id_num
     lang_name=''
@@ -141,6 +155,8 @@ def Input_Student():
     con.commit()
     c.execute("SELECT * FROM Basic_Student_Info b LEFT JOIN Student_Language s USING(Student_ID) ORDER BY Student_ID")
     rows = c.fetchall()
+
+## 학생 정보 조회 _ 개별
 def Search_Student_Each(menu):
     search_str = input('검색어를 입력하세요: ')
     if menu==1:
@@ -186,6 +202,8 @@ def Search_Student_Each(menu):
             Search_Student_Print(lang[0][0])
         else:
             print('검색결과가 없습니다.')
+
+## 학생 정보 출력
 def Search_Student_Print(ID):
     c.execute("SELECT * FROM Basic_student_info WHERE Student_ID='%s'"%ID)
     info = c.fetchall()[0]
@@ -201,6 +219,8 @@ def Search_Student_Print(ID):
         print('- 사용 가능한 컴퓨터 언어')
         for data in lang:
             print('  > %s (학습기간: %s, Level: %s)'%(data[1],data[3],data[2]))
+
+## 학생 정보 수정
 def Update_Student():
     global rows
     update_student_ID = input('수정할 학생의 ID를 입력하세요: ')
@@ -254,9 +274,12 @@ def Update_Student():
         c.execute("UPDATE Student_Language SET Period='%s' WHERE Student_ID='%s' AND Name='%s'"
                   % (modify, info[0], lang[(choice - 5) // 3][1]))
     con.commit()
+    Search_Student_Print(info[0])
     c.execute(
         "SELECT * FROM Basic_Student_Info b LEFT JOIN Student_Language s USING(Student_ID) ORDER BY Student_ID")
     rows = c.fetchall()
+
+## 학생 정보 삭제
 def Delete_Student():
     global rows
     delete_ID = input('삭제할 ID를 입력하세요: ')
@@ -267,7 +290,10 @@ def Delete_Student():
     c.execute("SELECT * FROM Basic_Student_Info b LEFT JOIN Student_Language s USING(Student_ID) ORDER BY Student_ID")
     rows = c.fetchall()
 DB_Insert()
+print("< 학생 정보 CRUD ver.2 >")
 menu = Print_Main_input()
+
+## 메인
 while True:
     if menu==1:
         list_info, list_20, list_30, list_40 = Count_Student_Info()

@@ -1,0 +1,4 @@
+ÃÑ Á¶ÇÕ °¹¼ö: 2047
+('alcohol + citric_acid + density + free_sulfur_dioxide + sulphates + total_sulfur_dioxide + volatile_acidity ', '53.82 %')
+
+'chlorides','fixed_acidity','residual_sugar'

@@ -14,5 +14,7 @@ SELECT * FROM basic_student_info b JOIN student_language s USING(Student_ID);
 -- (왼쪽 테이블은 무조건 가져오고 오른쪽과 매칭되지 않는 부분은 NULL)
 -- ON 대신 USING을 사용하여 참조데이터를 지정하고, 중복을 방지함
 -- ORDER BY 를 이용하여 Student_ID를 기준으로 정렬
+select * from basic_student_info;
+select * from student_language;
 SELECT * FROM basic_student_info b LEFT JOIN student_language s
 USING(Student_ID) ORDER BY Student_ID;

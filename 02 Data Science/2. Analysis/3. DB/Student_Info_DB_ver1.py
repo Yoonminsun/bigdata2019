@@ -1,6 +1,5 @@
 import MySQLdb
 from xlrd import open_workbook
-from xlwt import Workbook
 
 input_file = 'Student_Info_DB_Scheme.xlsx'
 
@@ -17,6 +16,7 @@ con.commit()
 rows=()
 id_num=0
 
+## table에 xlsx 파일 읽어와 insert
 def DB_Insert():
     global rows,id_num
     data=[]
@@ -30,21 +30,29 @@ def DB_Insert():
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
     id_num = int(rows[len(rows) - 1][0][3:]) + 1
+
+## 메인 메뉴
 def Print_Main_input():
     print('[ 메인 메뉴 ]')
     print('1. 요약 정보\n2. 입력\n3. 조회\n4. 수정\n5. 삭제\n6. 종료')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 조회 메뉴
 def Print_Search_input():
     print('< 조회 서브 메뉴 >')
     print('1. 개별 학생 조회\n2. 전체 학생 조회\n3. 상위 메뉴')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 검색 조건 메뉴
 def Print_Search_each_input():
     print('< 검색 조건 >')
     print('1. ID\n2. 이름\n3. 나이\n4. 전공\n5. 컴퓨터 언어 명\n6. 컴퓨터 언어 레벨\n7. 상위메뉴')
     menu = int(input('메뉴 입력: '))
     return menu
+
+## 요약정보에 쓰일 정보 count
 def Count_Student_Info():
     total_male = 0
     total_female = 0
@@ -58,10 +66,6 @@ def Count_Student_Info():
     list_20=[]
     list_30=[]
     list_40=[]
-    # c.execute("SELECT * From Students WHERE Sex='남'")
-    # count = c.fetchall()
-    # total_male = len(count)
-    # c.execute("SELECT Name,Age From Students")
     for row in rows:
         if row[2]=='남':
             total_male+=1
@@ -88,6 +92,7 @@ def Count_Student_Info():
     list_info = [len(rows),total_male,total_female,total_major,total_lang,total_high,total_python,
                  total_20,total_30,total_40]
     return list_info,list_20,list_30,list_40
+## 요약 정보 출력
 def Print_Info(list_info,list_20,list_30,list_40):
     print('< 요약 정보 >')
     print('* 전체 학생수: %d명'%list_info[0])
@@ -106,6 +111,7 @@ def Print_Info(list_info,list_20,list_30,list_40):
     print(list_30)
     print('  - 40대: %d명 (%.1f%%) ' % (list_info[9], (list_info[9] / list_info[0]) * 100), end='')
     print(list_40)
+## 학생 입력
 def Input_Student():
     global rows,id_num
     languages=[]
@@ -142,12 +148,15 @@ def Input_Student():
     con.commit()
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
+## 학생 조회 _ 개별
 def Search_Student_Each(menu):
     search_str = input('검색어를 입력하세요: ')
     search_row=[]
     # if menu==1:
     #     c.execute("SELECT * FROM Students WHERE ID='%s'"%search_str)
     #     search_row.append(c.fetchall())
+    # elif menu==2:
+
     for row in rows:
         if menu==1 and row[0]==search_str:
             search_row.append(row)
@@ -174,6 +183,7 @@ def Search_Student_Each(menu):
     else:
         print('* 검색 결과가 없습니다. *')
     return
+## 학생 정보 출력
 def Search_Student_Print(row):
     print('* %s (%s)'%(row[0],row[1]))
     print('- 성별: %s'%row[2])
@@ -192,6 +202,7 @@ def Search_Student_Print(row):
                 print('(Level: 중)')
             elif lang in row[8]:
                 print('(Level: 하)')
+## 학생 정보 수정
 def Update_Student():
     global rows
     update_student_ID = input('수정할 학생의 ID를 입력하세요: ')
@@ -225,7 +236,6 @@ def Update_Student():
     choice = int(input('수정할 항목의 번호를 입력하세요: '))
     if not choice ==5 and update_student[5]:
         modify = input('수정할 값을 입력하세요: ')
-
     if choice ==1:
         c.execute("UPDATE Students SET Name='%s' WHERE ID='%s'"%(modify,update_student_ID))
     elif choice ==2:
@@ -283,18 +293,20 @@ def Update_Student():
                     c.execute("UPDATE Students SET Low ='%s' WHERE ID='%s'"%(modify_1,update_student_ID))
                 if modify=='상':
                     modify = str(update_student[6])+','+languages[index]
+                    modify = modify.strip().strip(',')
                     c.execute("UPDATE Students SET High='%s' WHERE ID='%s'"%(modify,update_student_ID))
                 elif modify=='중':
                     modify = str(update_student[7]) + ',' + languages[index]
+                    modify = modify.strip().strip(',')
                     c.execute("UPDATE Students SET Middle='%s' WHERE ID='%s'" % (modify, update_student_ID))
                 elif modify=='하':
                     modify = str(update_student[8]) + ',' + languages[index]
+                    modify = modify.strip().strip(',')
                     c.execute("UPDATE Students SET Low='%s' WHERE ID='%s'" % (modify, update_student_ID))
     con.commit()
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
-    for row in rows:
-        print(row)
+## 학생 정보 삭제
 def Delete_Student():
     global rows
     delete_ID = input('삭제할 ID를 입력하세요: ')
@@ -304,7 +316,9 @@ def Delete_Student():
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
 DB_Insert()
+print("< 학생 정보 CRUD ver.1 >")
 menu = Print_Main_input()
+## 메인
 while True:
     if menu==1:
         list_info, list_20, list_30, list_40 = Count_Student_Info()
