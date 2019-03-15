@@ -9,7 +9,7 @@ wine.columns = wine.columns.str.replace(' ','_')
 my_formula = 'quality ~ alcohol + chlorides + citric_acid + density + fixed_acidity + free_sulfur_dioxide + pH + ' \
               'residual_sugar + sulphates + total_sulfur_dioxide + volatile_acidity'
 lm = ols(my_formula, data=wine).fit()
-
+print(lm.summary())
 dependent_variable = wine['quality']
 independent_variables = wine[wine.columns.difference(['quality','type','in_sample'])]
 
