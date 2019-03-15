@@ -244,7 +244,7 @@ def Update_Student():
             index+=3
 
     choice = int(input('수정할 항목의 번호를 입력하세요: '))
-    if not choice==5 and lang:
+    if not (choice==5 and not lang):
         modify = input('수정할 값을 입력하세요: ')
 
     if choice==1:

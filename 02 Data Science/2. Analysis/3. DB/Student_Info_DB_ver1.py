@@ -66,28 +66,39 @@ def Count_Student_Info():
     list_20=[]
     list_30=[]
     list_40=[]
-    for row in rows:
-        if row[2]=='남':
-            total_male+=1
-        elif row[2]=='여':
-            total_female+=1
-        if 20<=int(row[3])<30:
-            total_20+=1
-            list_20.append('%s:%s'%(row[1],int(row[3])))
-        elif 30<=int(row[3])<40:
-            total_30+=1
-            list_30.append('%s:%s'%(row[1],int(row[3])))
-        elif 40<=int(row[3])<50:
-            total_40+=1
-            list_40.append('%s:%s'%(row[1],int(row[3])))
-        if '컴퓨터 공학' in row[4] or'컴퓨터공학' in row[4] or '통계' in row[4]:
-            total_major+=1
-        if row[5]:
-            total_lang+=1
-            if '파이썬' in row[5]:
-                total_python+=1
-            if row[6]:
-                total_high+=1
+    c.execute("SELECT * FROM Students WHERE Sex='남'")
+    row = c.fetchall()
+    total_male = len(row)
+    c.execute("SELECT * FROM Students WHERE Sex='여'")
+    row = c.fetchall()
+    total_female = len(row)
+    c.execute("SELECT * FROM Students WHERE Age <30 AND Age>19")
+    row = c.fetchall()
+    total_20 = len(row)
+    for data in row:
+        list_20.append("%s:%d"%(data[1],data[3]))
+    c.execute("SELECT * FROM Students WHERE Age <40 AND Age>29")
+    row = c.fetchall()
+    total_30 = len(row)
+    for data in row:
+        list_30.append("%s:%d" % (data[1], data[3]))
+    c.execute("SELECT * FROM Students WHERE Age <50 AND Age>39")
+    row = c.fetchall()
+    total_40 = len(row)
+    for data in row:
+        list_40.append("%s:%d" % (data[1], data[3]))
+    c.execute("SELECT * FROM Students WHERE Major='컴퓨터 공학' OR (Major LIKE '%통계%' OR Major='컴퓨터공학')")
+    row = c.fetchall()
+    total_major = len(row)
+    c.execute("SELECT * FROM Students WHERE Languages LIKE '%파이썬%'")
+    row = c.fetchall()
+    total_python = len(row)
+    c.execute("SELECT * FROM Students WHERE Languages!=''")
+    row = c.fetchall()
+    total_lang = len(row)
+    c.execute("SELECT * FROM Students WHERE High!=''")
+    row = c.fetchall()
+    total_high = len(row)
 
     list_info = [len(rows),total_male,total_female,total_major,total_lang,total_high,total_python,
                  total_20,total_30,total_40]
@@ -151,40 +162,45 @@ def Input_Student():
 ## 학생 조회 _ 개별
 def Search_Student_Each(menu):
     search_str = input('검색어를 입력하세요: ')
-    search_row=[]
-    # if menu==1:
-    #     c.execute("SELECT * FROM Students WHERE ID='%s'"%search_str)
-    #     search_row.append(c.fetchall())
-    # elif menu==2:
+    search_row=()
+    if menu==1:
+        c.execute("SELECT * FROM Students WHERE ID='%s'"%search_str)
+        search_row = c.fetchall()
+    elif menu==2:
+        c.execute("SELECT * FROM Students WHERE Name LIKE '%{0}%'".format(search_str))
+        search_row = c.fetchall()
+    elif menu==3:
+        c.execute("SELECT * FROM Students WHERE Age=%s"%int(search_str))
+        search_row = c.fetchall()
+    elif menu==4:
+        c.execute("SELECT * FROM Students WHERE Major LIKE '%{0}%'".format(search_str))
+        search_row = c.fetchall()
+    elif menu==5:
+        c.execute("SELECT * FROM Students WHERE Languages LIKE '%{0}%'".format(search_str))
+        search_row = c.fetchall()
+    elif menu==6:
+        if search_str=='상':
+            c.execute("SELECT * FROM Students WHERE High!=''")
+            search_row = c.fetchall()
+        elif search_str=='중':
+            c.execute("SELECT * FROM Students WHERE Middle!=''")
+            search_row = c.fetchall()
+        elif search_str=='하':
+            c.execute("SELECT * FROM Students WHERE Low!=''")
+            search_row = c.fetchall()
 
-    for row in rows:
-        if menu==1 and row[0]==search_str:
-            search_row.append(row)
-        elif menu==2 and (search_str in row[1]):
-            search_row.append(row)
-        elif menu==3 and row[3]==int(search_str):
-            search_row.append(row)
-        elif menu==4 and (search_str in row[4]):
-            search_row.append(row)
-        elif menu==5 and (search_str in row[5]):
-            search_row.append(row)
-        elif menu==6:
-            if search_str=='상' and row[6]:
-                search_row.append(row)
-            elif search_str=='중' and row[7]:
-                search_row.append(row)
-            elif search_str=='하' and row[8]:
-                search_row.append(row)
     if len(search_row)>1:
         for row in search_row:
             print('- %s (%s, %d, %s)'%(row[0],row[1],int(row[3]),row[2]))
     elif len(search_row)==1:
-        Search_Student_Print(search_row[0])
+        Search_Student_Print(search_row[0][0])
     else:
         print('* 검색 결과가 없습니다. *')
     return
 ## 학생 정보 출력
-def Search_Student_Print(row):
+def Search_Student_Print(ID):
+    c.execute("SELECT * FROM Students WHERE ID='%s'"%ID)
+    row = c.fetchall()[0]
     print('* %s (%s)'%(row[0],row[1]))
     print('- 성별: %s'%row[2])
     print('- 나이: %d'%int(row[3]))
@@ -234,7 +250,7 @@ def Update_Student():
             index+=2
 
     choice = int(input('수정할 항목의 번호를 입력하세요: '))
-    if not choice ==5 and update_student[5]:
+    if not (choice ==5 and not update_student[5]):
         modify = input('수정할 값을 입력하세요: ')
     if choice ==1:
         c.execute("UPDATE Students SET Name='%s' WHERE ID='%s'"%(modify,update_student_ID))
@@ -270,7 +286,9 @@ def Update_Student():
                           % (lang, high,middle,low,update_student_ID))
         else:
             if (choice-5)%2==0:
-                modify_str = str(update_student[5]).replace(languages[(choice-5)//2],modify)
+                modify_str = update_student[5].split(',')
+                modify_str[(choice-5)//2] = modify
+                modify_str = ','.join(modify_str)
                 c.execute("UPDATE Students SET Languages='%s' WHERE ID='%s'"%(modify_str,update_student_ID))
                 if languages[(choice-5)//2] in update_student[6]:
                     modify_str = str(update_student[6]).replace(languages[(choice-5)//2],modify)
@@ -304,6 +322,7 @@ def Update_Student():
                     modify = modify.strip().strip(',')
                     c.execute("UPDATE Students SET Low='%s' WHERE ID='%s'" % (modify, update_student_ID))
     con.commit()
+    Search_Student_Print(update_student_ID)
     c.execute("SELECT * FROM Students")
     rows = c.fetchall()
 ## 학생 정보 삭제
@@ -337,8 +356,10 @@ while True:
                 Search_Student_Each(each_menu)
         elif search_menu==2:
             print('< 전체 학생 데이터 >')
-            for row in rows:
-                Search_Student_Print(row)
+            c.execute("SELECT ID FROM Students")
+            id_list = c.fetchall()
+            for id in id_list:
+                Search_Student_Print(id[0])
                 print()
         elif search_menu==3:
             menu = Print_Main_input()
