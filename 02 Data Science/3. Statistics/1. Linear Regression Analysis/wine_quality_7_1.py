@@ -35,14 +35,14 @@ for num in range(1,12):
         print('\n>> '+my_formula.replace('quality ~ ',''))
         print('>> match count=',match_count)
         print('>> 정답률: %.2f %%'%(match_count/len(y_predicted_rounded)*100))
-        match_dic['%s'%my_formula.replace('quality ~ ','')] = '%.2f %%'%(match_count/len(y_predicted_rounded)*100)
+        match_dic['%s'%my_formula.replace('quality ~ ','')] = match_count/len(y_predicted_rounded)*100
 
 
 # 최대값 찾기
 match_dic = sorted(match_dic.items(), key=operator.itemgetter(1),reverse=True)
 print(match_dic)
 print('총 조합 갯수: %d'%len(match_dic))
-print("MAX 조합:",match_dic[0])
+print("MAX 조합: %s >> %.2f %%"%(match_dic[0][0],match_dic[0][1]))
 end = datetime.fromtimestamp(time.time())
 print(start)
 print(end)
