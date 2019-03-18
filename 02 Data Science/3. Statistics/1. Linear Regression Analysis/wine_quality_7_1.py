@@ -24,7 +24,6 @@ for num in range(1,12):
         my_formula = my_formula.strip().rstrip('+')
         lm = ols(my_formula, data=wine).fit()
         dependent_variable = wine['quality']
-        # independent_variables = wine[wine.columns.difference(['quality','type','in_sample'])]
         independent_variables = wine[list(tup)] # formula 에 들어간 columns만 골라서 고정 변수로 줌
         y_predicted = lm.predict(independent_variables)
         y_predicted_rounded = [round(score) for score in y_predicted]

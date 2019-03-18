@@ -10,6 +10,9 @@ my_formula = 'quality ~ alcohol + chlorides + citric_acid + density + fixed_acid
               'residual_sugar + sulphates + total_sulfur_dioxide + volatile_acidity'
 lm = ols(my_formula, data=wine).fit()
 print(lm.summary())
+# print('>> R-squared:',lm.rsquared) # R-squared
+# print('>> COEF\n',lm.params) # COEF
+
 dependent_variable = wine['quality']
 independent_variables = wine[wine.columns.difference(['quality','type','in_sample'])]
 
