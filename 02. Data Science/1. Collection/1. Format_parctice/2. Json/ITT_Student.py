@@ -220,7 +220,7 @@ while True:
             choice_menu=1
             break
         elif choice_menu==2:
-            # test path = D:\Python_local_repository\02 Data Science\json dir\ITT_Student.json
+            # test path = D:\Python_local_repository\02. Data Science\json dir\ITT_Student.json
             my_path = input('파일 경로 입력: ')
             json_big_data = open_json()
             id_plus = int(json_big_data[len(json_big_data) - 1]['student_ID'][-3:]) + 1
