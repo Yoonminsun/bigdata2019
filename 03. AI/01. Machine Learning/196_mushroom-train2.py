@@ -12,6 +12,7 @@ mr = pd.read_csv("mushroom.csv", header=None)
 label = []
 data = []
 attr_list = []
+
 for row_index, row in mr.iterrows():
     label.append(row.ix[0])
     exdata = []
