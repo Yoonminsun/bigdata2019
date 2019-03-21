@@ -32,7 +32,7 @@ for row_index, row in mr.iterrows():
         d[idx] = 1
         exdata += d
     data.append(exdata)
-# 크로스 밸리데이션하기 --- (※3)
+# 크로스 밸리데이션하기
 # clf = svm.SVC(gamma='auto') ## 0.84
 clf = RandomForestClassifier() ## 0.92
 scores = model_selection.cross_val_score(clf, data, label, cv=5)
