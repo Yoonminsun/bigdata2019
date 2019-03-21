@@ -1,0 +1,18 @@
+< housing predict statistics >
+
+>> lotsize + bedrooms + bathrms + stories + driveway01 + recroom01 + fullbase01 + gashw01 + airco01 + garagepl + prefarea01 
+>> 0% match count= 0
+>> 5% match count= 98
+>> 10% match count= 191
+>> 20% match count= 349
+>> 0% 정답률: 0.00 %
+>> 5% 정답률: 19.10 %
+>> 10% 정답률: 37.23 %
+>> 20% 정답률: 68.03 %
+
+
+총 조합 갯수 = 2047
+0% MAX 조합: lotsize  >> 0.00 %
+5% MAX 조합: lotsize + bathrms + stories + driveway01 + fullbase01 + garagepl + prefarea01  >> 22.81 %
+10% MAX 조합: lotsize + bathrms + stories + fullbase01 + airco01 + garagepl + prefarea01  >> 40.16 %
+20% MAX 조합: lotsize + bathrms + stories + driveway01 + recroom01 + gashw01 + airco01 + prefarea01  >> 68.03 %

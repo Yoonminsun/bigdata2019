@@ -1,0 +1,6148 @@
+C:\Python37\python.exe "D:/Python_local_repository/03. AI/01. Machine Learning/wine_quality_svm.py"
+< Winequality Predict Svm >
+전체 조합 정답률: 79.73 %
+
+>> 조합: alcohol
+>> 정답률: 51.21 %
+
+>> 조합: chlorides
+>> 정답률: 43.77 %
+
+>> 조합: citric_acid
+>> 정답률: 43.65 %
+
+>> 조합: density
+>> 정답률: 43.65 %
+
+>> 조합: fixed_acidity
+>> 정답률: 44.51 %
+
+>> 조합: free_sulfur_dioxide
+>> 정답률: 46.33 %
+
+>> 조합: pH
+>> 정답률: 43.65 %
+
+>> 조합: residual_sugar
+>> 정답률: 44.65 %
+
+>> 조합: sulphates
+>> 정답률: 43.65 %
+
+>> 조합: total_sulfur_dioxide
+>> 정답률: 49.05 %
+
+>> 조합: volatile_acidity
+>> 정답률: 46.39 %
+
+>> 조합: alcohol+chlorides
+>> 정답률: 50.65 %
+
+>> 조합: alcohol+citric_acid
+>> 정답률: 51.13 %
+
+>> 조합: alcohol+density
+>> 정답률: 50.65 %
+
+>> 조합: alcohol+fixed_acidity
+>> 정답률: 51.16 %
+
+>> 조합: alcohol+free_sulfur_dioxide
+>> 정답률: 54.76 %
+
+>> 조합: alcohol+pH
+>> 정답률: 50.67 %
+
+>> 조합: alcohol+residual_sugar
+>> 정답률: 53.41 %
+
+>> 조합: alcohol+sulphates
+>> 정답률: 50.65 %
+
+>> 조합: alcohol+total_sulfur_dioxide
+>> 정답률: 58.92 %
+
+>> 조합: alcohol+volatile_acidity
+>> 정답률: 52.32 %
+
+>> 조합: chlorides+citric_acid
+>> 정답률: 43.82 %
+
+>> 조합: chlorides+density
+>> 정답률: 43.84 %
+
+>> 조합: chlorides+fixed_acidity
+>> 정답률: 44.50 %
+
+>> 조합: chlorides+free_sulfur_dioxide
+>> 정답률: 46.21 %
+
+>> 조합: chlorides+pH
+>> 정답률: 43.85 %
+
+>> 조합: chlorides+residual_sugar
+>> 정답률: 44.81 %
+
+>> 조합: chlorides+sulphates
+>> 정답률: 43.74 %
+
+>> 조합: chlorides+total_sulfur_dioxide
+>> 정답률: 48.13 %
+
+>> 조합: chlorides+volatile_acidity
+>> 정답률: 46.33 %
+
+>> 조합: citric_acid+density
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+fixed_acidity
+>> 정답률: 44.44 %
+
+>> 조합: citric_acid+free_sulfur_dioxide
+>> 정답률: 46.19 %
+
+>> 조합: citric_acid+pH
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+residual_sugar
+>> 정답률: 45.24 %
+
+>> 조합: citric_acid+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+total_sulfur_dioxide
+>> 정답률: 48.98 %
+
+>> 조합: citric_acid+volatile_acidity
+>> 정답률: 46.18 %
+
+>> 조합: density+fixed_acidity
+>> 정답률: 44.47 %
+
+>> 조합: density+free_sulfur_dioxide
+>> 정답률: 46.14 %
+
+>> 조합: density+pH
+>> 정답률: 43.65 %
+
+>> 조합: density+residual_sugar
+>> 정답률: 44.67 %
+
+>> 조합: density+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: density+total_sulfur_dioxide
+>> 정답률: 48.11 %
+
+>> 조합: density+volatile_acidity
+>> 정답률: 46.16 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide
+>> 정답률: 49.48 %
+
+>> 조합: fixed_acidity+pH
+>> 정답률: 44.51 %
+
+>> 조합: fixed_acidity+residual_sugar
+>> 정답률: 46.48 %
+
+>> 조합: fixed_acidity+sulphates
+>> 정답률: 44.53 %
+
+>> 조합: fixed_acidity+total_sulfur_dioxide
+>> 정답률: 54.53 %
+
+>> 조합: fixed_acidity+volatile_acidity
+>> 정답률: 46.93 %
+
+>> 조합: free_sulfur_dioxide+pH
+>> 정답률: 46.13 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar
+>> 정답률: 54.46 %
+
+>> 조합: free_sulfur_dioxide+sulphates
+>> 정답률: 46.64 %
+
+>> 조합: free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 73.68 %
+
+>> 조합: free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.91 %
+
+>> 조합: pH+residual_sugar
+>> 정답률: 44.68 %
+
+>> 조합: pH+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: pH+total_sulfur_dioxide
+>> 정답률: 48.64 %
+
+>> 조합: pH+volatile_acidity
+>> 정답률: 46.93 %
+
+>> 조합: residual_sugar+sulphates
+>> 정답률: 44.65 %
+
+>> 조합: residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.64 %
+
+>> 조합: residual_sugar+volatile_acidity
+>> 정답률: 47.56 %
+
+>> 조합: sulphates+total_sulfur_dioxide
+>> 정답률: 48.73 %
+
+>> 조합: sulphates+volatile_acidity
+>> 정답률: 46.87 %
+
+>> 조합: total_sulfur_dioxide+volatile_acidity
+>> 정답률: 49.24 %
+
+>> 조합: alcohol+chlorides+citric_acid
+>> 정답률: 51.30 %
+
+>> 조합: alcohol+chlorides+density
+>> 정답률: 50.82 %
+
+>> 조합: alcohol+chlorides+fixed_acidity
+>> 정답률: 51.39 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide
+>> 정답률: 53.95 %
+
+>> 조합: alcohol+chlorides+pH
+>> 정답률: 50.85 %
+
+>> 조합: alcohol+chlorides+residual_sugar
+>> 정답률: 53.07 %
+
+>> 조합: alcohol+chlorides+sulphates
+>> 정답률: 50.93 %
+
+>> 조합: alcohol+chlorides+total_sulfur_dioxide
+>> 정답률: 57.09 %
+
+>> 조합: alcohol+chlorides+volatile_acidity
+>> 정답률: 52.64 %
+
+>> 조합: alcohol+citric_acid+density
+>> 정답률: 51.19 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity
+>> 정답률: 51.62 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide
+>> 정답률: 54.32 %
+
+>> 조합: alcohol+citric_acid+pH
+>> 정답률: 51.15 %
+
+>> 조합: alcohol+citric_acid+residual_sugar
+>> 정답률: 53.69 %
+
+>> 조합: alcohol+citric_acid+sulphates
+>> 정답률: 51.16 %
+
+>> 조합: alcohol+citric_acid+total_sulfur_dioxide
+>> 정답률: 57.77 %
+
+>> 조합: alcohol+citric_acid+volatile_acidity
+>> 정답률: 52.56 %
+
+>> 조합: alcohol+density+fixed_acidity
+>> 정답률: 51.35 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide
+>> 정답률: 53.90 %
+
+>> 조합: alcohol+density+pH
+>> 정답률: 50.64 %
+
+>> 조합: alcohol+density+residual_sugar
+>> 정답률: 53.01 %
+
+>> 조합: alcohol+density+sulphates
+>> 정답률: 50.72 %
+
+>> 조합: alcohol+density+total_sulfur_dioxide
+>> 정답률: 57.09 %
+
+>> 조합: alcohol+density+volatile_acidity
+>> 정답률: 52.62 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 58.13 %
+
+>> 조합: alcohol+fixed_acidity+pH
+>> 정답률: 51.30 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar
+>> 정답률: 53.73 %
+
+>> 조합: alcohol+fixed_acidity+sulphates
+>> 정답률: 51.18 %
+
+>> 조합: alcohol+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 63.38 %
+
+>> 조합: alcohol+fixed_acidity+volatile_acidity
+>> 정답률: 53.22 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH
+>> 정답률: 54.18 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar
+>> 정답률: 63.38 %
+
+>> 조합: alcohol+free_sulfur_dioxide+sulphates
+>> 정답률: 54.50 %
+
+>> 조합: alcohol+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 80.64 %
+
+>> 조합: alcohol+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+pH+residual_sugar
+>> 정답률: 53.15 %
+
+>> 조합: alcohol+pH+sulphates
+>> 정답률: 50.85 %
+
+>> 조합: alcohol+pH+total_sulfur_dioxide
+>> 정답률: 57.61 %
+
+>> 조합: alcohol+pH+volatile_acidity
+>> 정답률: 52.44 %
+
+>> 조합: alcohol+residual_sugar+sulphates
+>> 정답률: 53.16 %
+
+>> 조합: alcohol+residual_sugar+total_sulfur_dioxide
+>> 정답률: 68.19 %
+
+>> 조합: alcohol+residual_sugar+volatile_acidity
+>> 정답률: 54.72 %
+
+>> 조합: alcohol+sulphates+total_sulfur_dioxide
+>> 정답률: 57.73 %
+
+>> 조합: alcohol+sulphates+volatile_acidity
+>> 정답률: 53.19 %
+
+>> 조합: alcohol+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.18 %
+
+>> 조합: chlorides+citric_acid+density
+>> 정답률: 43.77 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity
+>> 정답률: 44.54 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide
+>> 정답률: 45.98 %
+
+>> 조합: chlorides+citric_acid+pH
+>> 정답률: 43.82 %
+
+>> 조합: chlorides+citric_acid+residual_sugar
+>> 정답률: 45.31 %
+
+>> 조합: chlorides+citric_acid+sulphates
+>> 정답률: 43.79 %
+
+>> 조합: chlorides+citric_acid+total_sulfur_dioxide
+>> 정답률: 47.75 %
+
+>> 조합: chlorides+citric_acid+volatile_acidity
+>> 정답률: 46.44 %
+
+>> 조합: chlorides+density+fixed_acidity
+>> 정답률: 44.47 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide
+>> 정답률: 45.96 %
+
+>> 조합: chlorides+density+pH
+>> 정답률: 43.82 %
+
+>> 조합: chlorides+density+residual_sugar
+>> 정답률: 44.56 %
+
+>> 조합: chlorides+density+sulphates
+>> 정답률: 43.80 %
+
+>> 조합: chlorides+density+total_sulfur_dioxide
+>> 정답률: 47.41 %
+
+>> 조합: chlorides+density+volatile_acidity
+>> 정답률: 46.33 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.64 %
+
+>> 조합: chlorides+fixed_acidity+pH
+>> 정답률: 44.47 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar
+>> 정답률: 46.07 %
+
+>> 조합: chlorides+fixed_acidity+sulphates
+>> 정답률: 44.81 %
+
+>> 조합: chlorides+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 52.42 %
+
+>> 조합: chlorides+fixed_acidity+volatile_acidity
+>> 정답률: 46.70 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH
+>> 정답률: 45.99 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar
+>> 정답률: 52.52 %
+
+>> 조합: chlorides+free_sulfur_dioxide+sulphates
+>> 정답률: 46.30 %
+
+>> 조합: chlorides+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 69.52 %
+
+>> 조합: chlorides+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.62 %
+
+>> 조합: chlorides+pH+residual_sugar
+>> 정답률: 44.61 %
+
+>> 조합: chlorides+pH+sulphates
+>> 정답률: 43.82 %
+
+>> 조합: chlorides+pH+total_sulfur_dioxide
+>> 정답률: 47.65 %
+
+>> 조합: chlorides+pH+volatile_acidity
+>> 정답률: 46.70 %
+
+>> 조합: chlorides+residual_sugar+sulphates
+>> 정답률: 44.64 %
+
+>> 조합: chlorides+residual_sugar+total_sulfur_dioxide
+>> 정답률: 58.06 %
+
+>> 조합: chlorides+residual_sugar+volatile_acidity
+>> 정답률: 47.61 %
+
+>> 조합: chlorides+sulphates+total_sulfur_dioxide
+>> 정답률: 47.90 %
+
+>> 조합: chlorides+sulphates+volatile_acidity
+>> 정답률: 47.27 %
+
+>> 조합: chlorides+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.35 %
+
+>> 조합: citric_acid+density+fixed_acidity
+>> 정답률: 44.37 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide
+>> 정답률: 45.98 %
+
+>> 조합: citric_acid+density+pH
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+density+residual_sugar
+>> 정답률: 45.14 %
+
+>> 조합: citric_acid+density+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+density+total_sulfur_dioxide
+>> 정답률: 47.67 %
+
+>> 조합: citric_acid+density+volatile_acidity
+>> 정답률: 46.19 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.59 %
+
+>> 조합: citric_acid+fixed_acidity+pH
+>> 정답률: 44.48 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar
+>> 정답률: 46.58 %
+
+>> 조합: citric_acid+fixed_acidity+sulphates
+>> 정답률: 44.62 %
+
+>> 조합: citric_acid+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 52.73 %
+
+>> 조합: citric_acid+fixed_acidity+volatile_acidity
+>> 정답률: 47.02 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH
+>> 정답률: 46.04 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar
+>> 정답률: 52.76 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+sulphates
+>> 정답률: 46.62 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 69.97 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.01 %
+
+>> 조합: citric_acid+pH+residual_sugar
+>> 정답률: 45.21 %
+
+>> 조합: citric_acid+pH+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+pH+total_sulfur_dioxide
+>> 정답률: 48.18 %
+
+>> 조합: citric_acid+pH+volatile_acidity
+>> 정답률: 46.82 %
+
+>> 조합: citric_acid+residual_sugar+sulphates
+>> 정답률: 45.08 %
+
+>> 조합: citric_acid+residual_sugar+total_sulfur_dioxide
+>> 정답률: 58.15 %
+
+>> 조합: citric_acid+residual_sugar+volatile_acidity
+>> 정답률: 48.33 %
+
+>> 조합: citric_acid+sulphates+total_sulfur_dioxide
+>> 정답률: 48.19 %
+
+>> 조합: citric_acid+sulphates+volatile_acidity
+>> 정답률: 46.91 %
+
+>> 조합: citric_acid+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.73 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.64 %
+
+>> 조합: density+fixed_acidity+pH
+>> 정답률: 44.34 %
+
+>> 조합: density+fixed_acidity+residual_sugar
+>> 정답률: 45.93 %
+
+>> 조합: density+fixed_acidity+sulphates
+>> 정답률: 44.54 %
+
+>> 조합: density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 52.39 %
+
+>> 조합: density+fixed_acidity+volatile_acidity
+>> 정답률: 46.61 %
+
+>> 조합: density+free_sulfur_dioxide+pH
+>> 정답률: 45.94 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 52.50 %
+
+>> 조합: density+free_sulfur_dioxide+sulphates
+>> 정답률: 46.25 %
+
+>> 조합: density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 69.51 %
+
+>> 조합: density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.67 %
+
+>> 조합: density+pH+residual_sugar
+>> 정답률: 44.59 %
+
+>> 조합: density+pH+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: density+pH+total_sulfur_dioxide
+>> 정답률: 47.61 %
+
+>> 조합: density+pH+volatile_acidity
+>> 정답률: 46.71 %
+
+>> 조합: density+residual_sugar+sulphates
+>> 정답률: 44.48 %
+
+>> 조합: density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 58.04 %
+
+>> 조합: density+residual_sugar+volatile_acidity
+>> 정답률: 47.53 %
+
+>> 조합: density+sulphates+total_sulfur_dioxide
+>> 정답률: 47.84 %
+
+>> 조합: density+sulphates+volatile_acidity
+>> 정답률: 46.79 %
+
+>> 조합: density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.30 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.75 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 58.23 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.75 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 77.96 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 49.52 %
+
+>> 조합: fixed_acidity+pH+residual_sugar
+>> 정답률: 45.99 %
+
+>> 조합: fixed_acidity+pH+sulphates
+>> 정답률: 44.44 %
+
+>> 조합: fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 52.87 %
+
+>> 조합: fixed_acidity+pH+volatile_acidity
+>> 정답률: 46.88 %
+
+>> 조합: fixed_acidity+residual_sugar+sulphates
+>> 정답률: 46.34 %
+
+>> 조합: fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.15 %
+
+>> 조합: fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.64 %
+
+>> 조합: fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 52.72 %
+
+>> 조합: fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.08 %
+
+>> 조합: fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.19 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 52.69 %
+
+>> 조합: free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.36 %
+
+>> 조합: free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 70.05 %
+
+>> 조합: free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.84 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 53.04 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.42 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 53.09 %
+
+>> 조합: free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 69.72 %
+
+>> 조합: free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 47.28 %
+
+>> 조합: free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.14 %
+
+>> 조합: pH+residual_sugar+sulphates
+>> 정답률: 44.47 %
+
+>> 조합: pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 58.24 %
+
+>> 조합: pH+residual_sugar+volatile_acidity
+>> 정답률: 47.78 %
+
+>> 조합: pH+sulphates+total_sulfur_dioxide
+>> 정답률: 48.19 %
+
+>> 조합: pH+sulphates+volatile_acidity
+>> 정답률: 46.91 %
+
+>> 조합: pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.48 %
+
+>> 조합: residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 57.93 %
+
+>> 조합: residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.90 %
+
+>> 조합: residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.63 %
+
+>> 조합: sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.71 %
+
+>> 조합: alcohol+chlorides+citric_acid+density
+>> 정답률: 51.05 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity
+>> 정답률: 51.47 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide
+>> 정답률: 53.84 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH
+>> 정답률: 51.29 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar
+>> 정답률: 53.24 %
+
+>> 조합: alcohol+chlorides+citric_acid+sulphates
+>> 정답률: 51.19 %
+
+>> 조합: alcohol+chlorides+citric_acid+total_sulfur_dioxide
+>> 정답률: 55.78 %
+
+>> 조합: alcohol+chlorides+citric_acid+volatile_acidity
+>> 정답률: 52.64 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity
+>> 정답률: 51.24 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide
+>> 정답률: 53.29 %
+
+>> 조합: alcohol+chlorides+density+pH
+>> 정답률: 50.75 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar
+>> 정답률: 52.87 %
+
+>> 조합: alcohol+chlorides+density+sulphates
+>> 정답률: 50.81 %
+
+>> 조합: alcohol+chlorides+density+total_sulfur_dioxide
+>> 정답률: 55.72 %
+
+>> 조합: alcohol+chlorides+density+volatile_acidity
+>> 정답률: 52.73 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 56.80 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH
+>> 정답률: 51.33 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar
+>> 정답률: 53.41 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+sulphates
+>> 정답률: 51.35 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 60.80 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+volatile_acidity
+>> 정답률: 53.07 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH
+>> 정답률: 53.38 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar
+>> 정답률: 61.51 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+sulphates
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 77.19 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.90 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar
+>> 정답률: 53.27 %
+
+>> 조합: alcohol+chlorides+pH+sulphates
+>> 정답률: 50.79 %
+
+>> 조합: alcohol+chlorides+pH+total_sulfur_dioxide
+>> 정답률: 56.21 %
+
+>> 조합: alcohol+chlorides+pH+volatile_acidity
+>> 정답률: 52.61 %
+
+>> 조합: alcohol+chlorides+residual_sugar+sulphates
+>> 정답률: 53.13 %
+
+>> 조합: alcohol+chlorides+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.72 %
+
+>> 조합: alcohol+chlorides+residual_sugar+volatile_acidity
+>> 정답률: 54.38 %
+
+>> 조합: alcohol+chlorides+sulphates+total_sulfur_dioxide
+>> 정답률: 56.09 %
+
+>> 조합: alcohol+chlorides+sulphates+volatile_acidity
+>> 정답률: 52.96 %
+
+>> 조합: alcohol+chlorides+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.58 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity
+>> 정답률: 51.55 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide
+>> 정답률: 53.79 %
+
+>> 조합: alcohol+citric_acid+density+pH
+>> 정답률: 51.13 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar
+>> 정답률: 53.24 %
+
+>> 조합: alcohol+citric_acid+density+sulphates
+>> 정답률: 51.07 %
+
+>> 조합: alcohol+citric_acid+density+total_sulfur_dioxide
+>> 정답률: 55.78 %
+
+>> 조합: alcohol+citric_acid+density+volatile_acidity
+>> 정답률: 52.64 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 57.18 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH
+>> 정답률: 51.53 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar
+>> 정답률: 53.86 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+sulphates
+>> 정답률: 51.67 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 61.47 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+volatile_acidity
+>> 정답률: 53.38 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH
+>> 정답률: 53.89 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar
+>> 정답률: 61.72 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+sulphates
+>> 정답률: 54.18 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 77.40 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.41 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar
+>> 정답률: 53.72 %
+
+>> 조합: alcohol+citric_acid+pH+sulphates
+>> 정답률: 51.12 %
+
+>> 조합: alcohol+citric_acid+pH+total_sulfur_dioxide
+>> 정답률: 56.43 %
+
+>> 조합: alcohol+citric_acid+pH+volatile_acidity
+>> 정답률: 52.66 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+sulphates
+>> 정답률: 53.52 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.97 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+volatile_acidity
+>> 정답률: 54.70 %
+
+>> 조합: alcohol+citric_acid+sulphates+total_sulfur_dioxide
+>> 정답률: 56.24 %
+
+>> 조합: alcohol+citric_acid+sulphates+volatile_acidity
+>> 정답률: 52.92 %
+
+>> 조합: alcohol+citric_acid+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.75 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 56.80 %
+
+>> 조합: alcohol+density+fixed_acidity+pH
+>> 정답률: 51.27 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+density+fixed_acidity+sulphates
+>> 정답률: 51.22 %
+
+>> 조합: alcohol+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 60.80 %
+
+>> 조합: alcohol+density+fixed_acidity+volatile_acidity
+>> 정답률: 53.06 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH
+>> 정답률: 53.47 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 61.47 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+sulphates
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 77.20 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.90 %
+
+>> 조합: alcohol+density+pH+residual_sugar
+>> 정답률: 53.33 %
+
+>> 조합: alcohol+density+pH+sulphates
+>> 정답률: 50.73 %
+
+>> 조합: alcohol+density+pH+total_sulfur_dioxide
+>> 정답률: 56.21 %
+
+>> 조합: alcohol+density+pH+volatile_acidity
+>> 정답률: 52.66 %
+
+>> 조합: alcohol+density+residual_sugar+sulphates
+>> 정답률: 52.90 %
+
+>> 조합: alcohol+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.68 %
+
+>> 조합: alcohol+density+residual_sugar+volatile_acidity
+>> 정답률: 54.33 %
+
+>> 조합: alcohol+density+sulphates+total_sulfur_dioxide
+>> 정답률: 56.03 %
+
+>> 조합: alcohol+density+sulphates+volatile_acidity
+>> 정답률: 52.95 %
+
+>> 조합: alcohol+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.66 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 57.09 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 66.00 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 57.06 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 83.62 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.64 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.50 %
+
+>> 조합: alcohol+fixed_acidity+pH+sulphates
+>> 정답률: 51.25 %
+
+>> 조합: alcohol+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 61.29 %
+
+>> 조합: alcohol+fixed_acidity+pH+volatile_acidity
+>> 정답률: 53.15 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.61 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 71.71 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.81 %
+
+>> 조합: alcohol+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 61.44 %
+
+>> 조합: alcohol+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.38 %
+
+>> 조합: alcohol+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.49 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 62.07 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.89 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 77.44 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 54.24 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 61.87 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 86.96 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 61.91 %
+
+>> 조합: alcohol+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 77.44 %
+
+>> 조합: alcohol+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 54.66 %
+
+>> 조합: alcohol+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 77.57 %
+
+>> 조합: alcohol+pH+residual_sugar+sulphates
+>> 정답률: 53.33 %
+
+>> 조합: alcohol+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 66.11 %
+
+>> 조합: alcohol+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.87 %
+
+>> 조합: alcohol+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 56.69 %
+
+>> 조합: alcohol+pH+sulphates+volatile_acidity
+>> 정답률: 52.99 %
+
+>> 조합: alcohol+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.87 %
+
+>> 조합: alcohol+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 65.97 %
+
+>> 조합: alcohol+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.32 %
+
+>> 조합: alcohol+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.00 %
+
+>> 조합: alcohol+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.21 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity
+>> 정답률: 44.51 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide
+>> 정답률: 45.96 %
+
+>> 조합: chlorides+citric_acid+density+pH
+>> 정답률: 43.80 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar
+>> 정답률: 45.01 %
+
+>> 조합: chlorides+citric_acid+density+sulphates
+>> 정답률: 43.80 %
+
+>> 조합: chlorides+citric_acid+density+total_sulfur_dioxide
+>> 정답률: 47.48 %
+
+>> 조합: chlorides+citric_acid+density+volatile_acidity
+>> 정답률: 46.45 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.38 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH
+>> 정답률: 44.61 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar
+>> 정답률: 46.45 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+sulphates
+>> 정답률: 44.77 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 51.99 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+volatile_acidity
+>> 정답률: 46.88 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH
+>> 정답률: 46.02 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar
+>> 정답률: 51.67 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+sulphates
+>> 정답률: 46.61 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 67.03 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.79 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar
+>> 정답률: 45.21 %
+
+>> 조합: chlorides+citric_acid+pH+sulphates
+>> 정답률: 43.84 %
+
+>> 조합: chlorides+citric_acid+pH+total_sulfur_dioxide
+>> 정답률: 47.62 %
+
+>> 조합: chlorides+citric_acid+pH+volatile_acidity
+>> 정답률: 46.76 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+sulphates
+>> 정답률: 45.02 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+total_sulfur_dioxide
+>> 정답률: 56.15 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+volatile_acidity
+>> 정답률: 47.98 %
+
+>> 조합: chlorides+citric_acid+sulphates+total_sulfur_dioxide
+>> 정답률: 47.84 %
+
+>> 조합: chlorides+citric_acid+sulphates+volatile_acidity
+>> 정답률: 47.08 %
+
+>> 조합: chlorides+citric_acid+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.24 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.19 %
+
+>> 조합: chlorides+density+fixed_acidity+pH
+>> 정답률: 44.44 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar
+>> 정답률: 45.65 %
+
+>> 조합: chlorides+density+fixed_acidity+sulphates
+>> 정답률: 44.77 %
+
+>> 조합: chlorides+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 51.69 %
+
+>> 조합: chlorides+density+fixed_acidity+volatile_acidity
+>> 정답률: 46.79 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH
+>> 정답률: 45.90 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 51.12 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+sulphates
+>> 정답률: 46.05 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 66.58 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.50 %
+
+>> 조합: chlorides+density+pH+residual_sugar
+>> 정답률: 44.54 %
+
+>> 조합: chlorides+density+pH+sulphates
+>> 정답률: 43.80 %
+
+>> 조합: chlorides+density+pH+total_sulfur_dioxide
+>> 정답률: 47.16 %
+
+>> 조합: chlorides+density+pH+volatile_acidity
+>> 정답률: 46.64 %
+
+>> 조합: chlorides+density+residual_sugar+sulphates
+>> 정답률: 44.41 %
+
+>> 조합: chlorides+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 55.89 %
+
+>> 조합: chlorides+density+residual_sugar+volatile_acidity
+>> 정답률: 47.47 %
+
+>> 조합: chlorides+density+sulphates+total_sulfur_dioxide
+>> 정답률: 47.33 %
+
+>> 조합: chlorides+density+sulphates+volatile_acidity
+>> 정답률: 47.18 %
+
+>> 조합: chlorides+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.96 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.45 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 56.24 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.39 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 74.83 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.95 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar
+>> 정답률: 45.64 %
+
+>> 조합: chlorides+fixed_acidity+pH+sulphates
+>> 정답률: 44.91 %
+
+>> 조합: chlorides+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 52.10 %
+
+>> 조합: chlorides+fixed_acidity+pH+volatile_acidity
+>> 정답률: 47.01 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 46.02 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.23 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.36 %
+
+>> 조합: chlorides+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 51.93 %
+
+>> 조합: chlorides+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.07 %
+
+>> 조합: chlorides+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.19 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 51.33 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.14 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 67.02 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.71 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 51.58 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 80.14 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 51.96 %
+
+>> 조합: chlorides+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 67.03 %
+
+>> 조합: chlorides+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 47.07 %
+
+>> 조합: chlorides+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.05 %
+
+>> 조합: chlorides+pH+residual_sugar+sulphates
+>> 정답률: 44.44 %
+
+>> 조합: chlorides+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 56.30 %
+
+>> 조합: chlorides+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.90 %
+
+>> 조합: chlorides+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.51 %
+
+>> 조합: chlorides+pH+sulphates+volatile_acidity
+>> 정답률: 47.27 %
+
+>> 조합: chlorides+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.07 %
+
+>> 조합: chlorides+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 56.20 %
+
+>> 조합: chlorides+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.95 %
+
+>> 조합: chlorides+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.86 %
+
+>> 조합: chlorides+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.42 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 48.27 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH
+>> 정답률: 44.51 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar
+>> 정답률: 46.21 %
+
+>> 조합: citric_acid+density+fixed_acidity+sulphates
+>> 정답률: 44.51 %
+
+>> 조합: citric_acid+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 51.99 %
+
+>> 조합: citric_acid+density+fixed_acidity+volatile_acidity
+>> 정답률: 47.02 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH
+>> 정답률: 46.04 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 51.61 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+sulphates
+>> 정답률: 46.58 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 67.02 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.61 %
+
+>> 조합: citric_acid+density+pH+residual_sugar
+>> 정답률: 45.04 %
+
+>> 조합: citric_acid+density+pH+sulphates
+>> 정답률: 43.65 %
+
+>> 조합: citric_acid+density+pH+total_sulfur_dioxide
+>> 정답률: 47.61 %
+
+>> 조합: citric_acid+density+pH+volatile_acidity
+>> 정답률: 46.61 %
+
+>> 조합: citric_acid+density+residual_sugar+sulphates
+>> 정답률: 44.93 %
+
+>> 조합: citric_acid+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 56.20 %
+
+>> 조합: citric_acid+density+residual_sugar+volatile_acidity
+>> 정답률: 47.90 %
+
+>> 조합: citric_acid+density+sulphates+total_sulfur_dioxide
+>> 정답률: 47.84 %
+
+>> 조합: citric_acid+density+sulphates+volatile_acidity
+>> 정답률: 46.79 %
+
+>> 조합: citric_acid+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.25 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.51 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 56.98 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.21 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 75.03 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 49.15 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar
+>> 정답률: 46.42 %
+
+>> 조합: citric_acid+fixed_acidity+pH+sulphates
+>> 정답률: 44.50 %
+
+>> 조합: citric_acid+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 52.36 %
+
+>> 조합: citric_acid+fixed_acidity+pH+volatile_acidity
+>> 정답률: 47.11 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 46.68 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.51 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.64 %
+
+>> 조합: citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 52.24 %
+
+>> 조합: citric_acid+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.34 %
+
+>> 조합: citric_acid+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.50 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 51.62 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.65 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 67.37 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.62 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 52.15 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 80.47 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 52.29 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 67.38 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 47.24 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.48 %
+
+>> 조합: citric_acid+pH+residual_sugar+sulphates
+>> 정답률: 45.01 %
+
+>> 조합: citric_acid+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 56.80 %
+
+>> 조합: citric_acid+pH+residual_sugar+volatile_acidity
+>> 정답률: 48.18 %
+
+>> 조합: citric_acid+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 48.05 %
+
+>> 조합: citric_acid+pH+sulphates+volatile_acidity
+>> 정답률: 46.99 %
+
+>> 조합: citric_acid+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.44 %
+
+>> 조합: citric_acid+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 56.58 %
+
+>> 조합: citric_acid+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.41 %
+
+>> 조합: citric_acid+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.21 %
+
+>> 조합: citric_acid+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.56 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.38 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 56.30 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.33 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 74.82 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.90 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar
+>> 정답률: 45.61 %
+
+>> 조합: density+fixed_acidity+pH+sulphates
+>> 정답률: 44.68 %
+
+>> 조합: density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 52.13 %
+
+>> 조합: density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 46.99 %
+
+>> 조합: density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 45.84 %
+
+>> 조합: density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.07 %
+
+>> 조합: density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.41 %
+
+>> 조합: density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 51.92 %
+
+>> 조합: density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.07 %
+
+>> 조합: density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.21 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 51.25 %
+
+>> 조합: density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.14 %
+
+>> 조합: density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 67.03 %
+
+>> 조합: density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.65 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 51.50 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 80.11 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 51.92 %
+
+>> 조합: density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 66.97 %
+
+>> 조합: density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 46.98 %
+
+>> 조합: density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.05 %
+
+>> 조합: density+pH+residual_sugar+sulphates
+>> 정답률: 44.47 %
+
+>> 조합: density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 56.30 %
+
+>> 조합: density+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.82 %
+
+>> 조합: density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.51 %
+
+>> 조합: density+pH+sulphates+volatile_acidity
+>> 정답률: 46.99 %
+
+>> 조합: density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.05 %
+
+>> 조합: density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 56.10 %
+
+>> 조합: density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.51 %
+
+>> 조합: density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.81 %
+
+>> 조합: density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.44 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 56.78 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 48.59 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 75.08 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 49.18 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 56.72 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 86.12 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 57.12 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 74.99 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 49.08 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.02 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.94 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.46 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 48.68 %
+
+>> 조합: fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 52.19 %
+
+>> 조합: fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.16 %
+
+>> 조합: fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.47 %
+
+>> 조합: fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 62.41 %
+
+>> 조합: fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.61 %
+
+>> 조합: fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.78 %
+
+>> 조합: fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.38 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 51.79 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 80.39 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 52.07 %
+
+>> 조합: free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 67.37 %
+
+>> 조합: free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 47.31 %
+
+>> 조합: free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.51 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 80.36 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 52.52 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.54 %
+
+>> 조합: free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.38 %
+
+>> 조합: pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 56.67 %
+
+>> 조합: pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.88 %
+
+>> 조합: pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.93 %
+
+>> 조합: pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.45 %
+
+>> 조합: residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.18 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity
+>> 정답률: 51.36 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide
+>> 정답률: 53.35 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH
+>> 정답률: 51.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar
+>> 정답률: 53.07 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+sulphates
+>> 정답률: 51.10 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+total_sulfur_dioxide
+>> 정답률: 54.72 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+volatile_acidity
+>> 정답률: 52.47 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 56.21 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH
+>> 정답률: 51.47 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar
+>> 정답률: 53.76 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+sulphates
+>> 정답률: 51.58 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 59.60 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+volatile_acidity
+>> 정답률: 52.93 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH
+>> 정답률: 53.47 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar
+>> 정답률: 60.58 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+sulphates
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 74.71 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.89 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+sulphates
+>> 정답률: 51.13 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+total_sulfur_dioxide
+>> 정답률: 55.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+volatile_acidity
+>> 정답률: 52.58 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+sulphates
+>> 정답률: 53.49 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+total_sulfur_dioxide
+>> 정답률: 64.18 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+volatile_acidity
+>> 정답률: 54.33 %
+
+>> 조합: alcohol+chlorides+citric_acid+sulphates+total_sulfur_dioxide
+>> 정답률: 55.27 %
+
+>> 조합: alcohol+chlorides+citric_acid+sulphates+volatile_acidity
+>> 정답률: 52.89 %
+
+>> 조합: alcohol+chlorides+citric_acid+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.58 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 56.12 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH
+>> 정답률: 51.16 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar
+>> 정답률: 52.90 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+sulphates
+>> 정답률: 51.32 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 59.17 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+volatile_acidity
+>> 정답률: 52.96 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH
+>> 정답률: 53.01 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 60.26 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+sulphates
+>> 정답률: 53.30 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 74.54 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.52 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar
+>> 정답률: 52.58 %
+
+>> 조합: alcohol+chlorides+density+pH+sulphates
+>> 정답률: 50.79 %
+
+>> 조합: alcohol+chlorides+density+pH+total_sulfur_dioxide
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+chlorides+density+pH+volatile_acidity
+>> 정답률: 52.52 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+sulphates
+>> 정답률: 52.79 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 63.94 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+volatile_acidity
+>> 정답률: 54.06 %
+
+>> 조합: alcohol+chlorides+density+sulphates+total_sulfur_dioxide
+>> 정답률: 54.93 %
+
+>> 조합: alcohol+chlorides+density+sulphates+volatile_acidity
+>> 정답률: 52.86 %
+
+>> 조합: alcohol+chlorides+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.33 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 56.40 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 64.09 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 56.38 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 80.64 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.90 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.33 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+sulphates
+>> 정답률: 51.19 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 59.63 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+volatile_acidity
+>> 정답률: 53.13 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.21 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 69.08 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.70 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 59.54 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.06 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.89 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 60.72 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 74.82 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.66 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 60.60 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 84.82 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 60.44 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 74.73 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.99 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.02 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+sulphates
+>> 정답률: 53.04 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 64.12 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.41 %
+
+>> 조합: alcohol+chlorides+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 55.44 %
+
+>> 조합: alcohol+chlorides+pH+sulphates+volatile_acidity
+>> 정답률: 53.01 %
+
+>> 조합: alcohol+chlorides+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.75 %
+
+>> 조합: alcohol+chlorides+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 64.37 %
+
+>> 조합: alcohol+chlorides+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.16 %
+
+>> 조합: alcohol+chlorides+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.06 %
+
+>> 조합: alcohol+chlorides+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.13 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 56.16 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH
+>> 정답률: 51.42 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar
+>> 정답률: 53.76 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+sulphates
+>> 정답률: 51.58 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 59.60 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+volatile_acidity
+>> 정답률: 53.06 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH
+>> 정답률: 53.53 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 60.49 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+sulphates
+>> 정답률: 53.61 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 74.73 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.82 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar
+>> 정답률: 53.26 %
+
+>> 조합: alcohol+citric_acid+density+pH+sulphates
+>> 정답률: 51.09 %
+
+>> 조합: alcohol+citric_acid+density+pH+total_sulfur_dioxide
+>> 정답률: 55.09 %
+
+>> 조합: alcohol+citric_acid+density+pH+volatile_acidity
+>> 정답률: 52.53 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+sulphates
+>> 정답률: 53.44 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 64.12 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+volatile_acidity
+>> 정답률: 54.36 %
+
+>> 조합: alcohol+citric_acid+density+sulphates+total_sulfur_dioxide
+>> 정답률: 55.21 %
+
+>> 조합: alcohol+citric_acid+density+sulphates+volatile_acidity
+>> 정답률: 52.92 %
+
+>> 조합: alcohol+citric_acid+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.55 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 56.32 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 64.23 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 56.75 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 80.91 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.09 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.90 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+sulphates
+>> 정답률: 51.61 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 59.94 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+volatile_acidity
+>> 정답률: 53.09 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.66 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 69.36 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 55.15 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 59.97 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.21 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 60.81 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.87 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 75.05 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 54.07 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 60.92 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 84.95 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 60.83 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 74.93 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 54.41 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.19 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+sulphates
+>> 정답률: 53.52 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 64.29 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.70 %
+
+>> 조합: alcohol+citric_acid+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 55.63 %
+
+>> 조합: alcohol+citric_acid+pH+sulphates+volatile_acidity
+>> 정답률: 53.02 %
+
+>> 조합: alcohol+citric_acid+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.87 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 64.58 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.50 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.45 %
+
+>> 조합: alcohol+citric_acid+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.21 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 56.43 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 64.08 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 56.35 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 80.64 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.87 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.27 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+sulphates
+>> 정답률: 51.16 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 59.58 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 53.07 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.12 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 69.06 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.72 %
+
+>> 조합: alcohol+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 59.52 %
+
+>> 조합: alcohol+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.09 %
+
+>> 조합: alcohol+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.89 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 60.74 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.38 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 74.82 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.61 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 60.58 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 84.79 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 60.47 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 74.68 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.99 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.00 %
+
+>> 조합: alcohol+density+pH+residual_sugar+sulphates
+>> 정답률: 52.86 %
+
+>> 조합: alcohol+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 64.12 %
+
+>> 조합: alcohol+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.35 %
+
+>> 조합: alcohol+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 55.44 %
+
+>> 조합: alcohol+density+pH+sulphates+volatile_acidity
+>> 정답률: 52.93 %
+
+>> 조합: alcohol+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.75 %
+
+>> 조합: alcohol+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 64.37 %
+
+>> 조합: alcohol+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.06 %
+
+>> 조합: alcohol+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.01 %
+
+>> 조합: alcohol+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.06 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 64.15 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 56.56 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 80.87 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 57.20 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 64.31 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 88.78 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 64.63 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 80.73 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 57.38 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.84 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.33 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 69.54 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 55.03 %
+
+>> 조합: alcohol+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 60.06 %
+
+>> 조합: alcohol+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.42 %
+
+>> 조합: alcohol+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.21 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 69.25 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.90 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 69.56 %
+
+>> 조합: alcohol+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.34 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.94 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.01 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 60.81 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 74.96 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 54.39 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.36 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 85.05 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.01 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.07 %
+
+>> 조합: alcohol+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.11 %
+
+>> 조합: alcohol+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 64.37 %
+
+>> 조합: alcohol+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.43 %
+
+>> 조합: alcohol+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.23 %
+
+>> 조합: alcohol+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.15 %
+
+>> 조합: alcohol+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.46 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 47.84 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH
+>> 정답률: 44.45 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar
+>> 정답률: 45.76 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+sulphates
+>> 정답률: 44.90 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 51.22 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+volatile_acidity
+>> 정답률: 46.94 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH
+>> 정답률: 45.96 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 50.04 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+sulphates
+>> 정답률: 46.39 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 65.14 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 46.47 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar
+>> 정답률: 44.47 %
+
+>> 조합: chlorides+citric_acid+density+pH+sulphates
+>> 정답률: 43.80 %
+
+>> 조합: chlorides+citric_acid+density+pH+total_sulfur_dioxide
+>> 정답률: 47.36 %
+
+>> 조합: chlorides+citric_acid+density+pH+volatile_acidity
+>> 정답률: 46.64 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+sulphates
+>> 정답률: 44.54 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 55.03 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+volatile_acidity
+>> 정답률: 47.59 %
+
+>> 조합: chlorides+citric_acid+density+sulphates+total_sulfur_dioxide
+>> 정답률: 47.38 %
+
+>> 조합: chlorides+citric_acid+density+sulphates+volatile_acidity
+>> 정답률: 47.04 %
+
+>> 조합: chlorides+citric_acid+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.50 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.05 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 54.75 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.13 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 71.97 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.70 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar
+>> 정답률: 46.02 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+sulphates
+>> 정답률: 44.84 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 51.81 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+volatile_acidity
+>> 정답률: 47.10 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 46.27 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.80 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.11 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 51.62 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.22 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.64 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 50.41 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.50 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 65.49 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.76 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 50.85 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.07 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 51.22 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 65.40 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 46.99 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.48 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+sulphates
+>> 정답률: 44.53 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 55.47 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.84 %
+
+>> 조합: chlorides+citric_acid+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.68 %
+
+>> 조합: chlorides+citric_acid+pH+sulphates+volatile_acidity
+>> 정답률: 47.25 %
+
+>> 조합: chlorides+citric_acid+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.61 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.36 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.96 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.58 %
+
+>> 조합: chlorides+citric_acid+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.68 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.08 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 54.47 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 47.91 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 71.69 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.39 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 44.97 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+sulphates
+>> 정답률: 44.93 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 51.47 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 46.81 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 45.36 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.50 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 47.38 %
+
+>> 조합: chlorides+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 51.24 %
+
+>> 조합: chlorides+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.10 %
+
+>> 조합: chlorides+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.47 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 50.32 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.01 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 65.14 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.45 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 50.30 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 77.84 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 50.90 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 65.01 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 46.81 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.28 %
+
+>> 조합: chlorides+density+pH+residual_sugar+sulphates
+>> 정답률: 44.19 %
+
+>> 조합: chlorides+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 54.95 %
+
+>> 조합: chlorides+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.11 %
+
+>> 조합: chlorides+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.22 %
+
+>> 조합: chlorides+density+pH+sulphates+volatile_acidity
+>> 정답률: 47.28 %
+
+>> 조합: chlorides+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.53 %
+
+>> 조합: chlorides+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.04 %
+
+>> 조합: chlorides+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.33 %
+
+>> 조합: chlorides+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.10 %
+
+>> 조합: chlorides+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.51 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 54.84 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 48.15 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 72.00 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.59 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 54.83 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.47 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 55.09 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 71.94 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.61 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.99 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.31 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.74 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.67 %
+
+>> 조합: chlorides+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 51.73 %
+
+>> 조합: chlorides+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.16 %
+
+>> 조합: chlorides+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.82 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 60.83 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.98 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.98 %
+
+>> 조합: chlorides+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.67 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 50.41 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.10 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 51.10 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 65.43 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.84 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.68 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.14 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 51.39 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.14 %
+
+>> 조합: chlorides+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.58 %
+
+>> 조합: chlorides+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.33 %
+
+>> 조합: chlorides+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.59 %
+
+>> 조합: chlorides+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.43 %
+
+>> 조합: chlorides+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.81 %
+
+>> 조합: chlorides+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.33 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 48.07 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 54.76 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 48.08 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 71.94 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.59 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 45.93 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+sulphates
+>> 정답률: 44.45 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 51.81 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 47.14 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 46.31 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.75 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 48.13 %
+
+>> 조합: citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 51.61 %
+
+>> 조합: citric_acid+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.25 %
+
+>> 조합: citric_acid+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.62 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 50.47 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.48 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 65.49 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.65 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 50.82 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.07 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 51.15 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 65.40 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 46.96 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.45 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+sulphates
+>> 정답률: 44.51 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 55.49 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.87 %
+
+>> 조합: citric_acid+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.64 %
+
+>> 조합: citric_acid+density+pH+sulphates+volatile_acidity
+>> 정답률: 47.02 %
+
+>> 조합: citric_acid+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.56 %
+
+>> 조합: citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.29 %
+
+>> 조합: citric_acid+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.95 %
+
+>> 조합: citric_acid+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.50 %
+
+>> 조합: citric_acid+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.68 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 55.30 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 48.13 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 72.25 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.73 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 55.13 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.65 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 55.50 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 72.17 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.90 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.20 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 46.38 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 61.01 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 48.10 %
+
+>> 조합: citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 52.07 %
+
+>> 조합: citric_acid+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.27 %
+
+>> 조합: citric_acid+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.05 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 61.17 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.70 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.24 %
+
+>> 조합: citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.93 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 50.99 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.42 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 51.35 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 65.68 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 47.14 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.65 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.34 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 51.35 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.41 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.68 %
+
+>> 조합: citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.83 %
+
+>> 조합: citric_acid+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.98 %
+
+>> 조합: citric_acid+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.84 %
+
+>> 조합: citric_acid+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.84 %
+
+>> 조합: citric_acid+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.72 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 54.84 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 48.11 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 71.99 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.65 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 54.84 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.47 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 55.09 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 71.94 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.50 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.96 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.14 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 60.69 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.53 %
+
+>> 조합: density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 51.72 %
+
+>> 조합: density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.14 %
+
+>> 조합: density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.85 %
+
+>> 조합: density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 60.84 %
+
+>> 조합: density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.05 %
+
+>> 조합: density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.95 %
+
+>> 조합: density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.69 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 50.41 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.10 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 51.07 %
+
+>> 조합: density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 65.41 %
+
+>> 조합: density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.81 %
+
+>> 조합: density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.63 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.17 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 51.36 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.14 %
+
+>> 조합: density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.55 %
+
+>> 조합: density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 55.27 %
+
+>> 조합: density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.33 %
+
+>> 조합: density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.44 %
+
+>> 조합: density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.84 %
+
+>> 조합: density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.33 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 55.10 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.72 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 55.63 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 72.23 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.75 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.22 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.68 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 55.53 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.68 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.13 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 60.98 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.04 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.14 %
+
+>> 조합: fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 52.15 %
+
+>> 조합: fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.15 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.37 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 51.45 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.42 %
+
+>> 조합: free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.81 %
+
+>> 조합: free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.53 %
+
+>> 조합: pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.79 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide
+>> 정답률: 55.38 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH
+>> 정답률: 51.53 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar
+>> 정답률: 53.44 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+sulphates
+>> 정답률: 51.55 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+total_sulfur_dioxide
+>> 정답률: 58.30 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+volatile_acidity
+>> 정답률: 52.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH
+>> 정답률: 53.26 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar
+>> 정답률: 59.32 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+sulphates
+>> 정답률: 53.35 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 72.77 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.42 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar
+>> 정답률: 52.98 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+sulphates
+>> 정답률: 51.09 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+total_sulfur_dioxide
+>> 정답률: 54.52 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+volatile_acidity
+>> 정답률: 52.70 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+sulphates
+>> 정답률: 52.81 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.94 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+volatile_acidity
+>> 정답률: 53.72 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+sulphates+total_sulfur_dioxide
+>> 정답률: 54.66 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+sulphates+volatile_acidity
+>> 정답률: 52.79 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.96 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 55.79 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 62.49 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 55.83 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 78.33 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.13 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.76 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+sulphates
+>> 정답률: 51.42 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 58.81 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+volatile_acidity
+>> 정답률: 52.92 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.53 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.20 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.63 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 58.66 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.04 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 59.80 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.29 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 73.06 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 59.83 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.19 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 59.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 73.08 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.14 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+sulphates
+>> 정답률: 53.01 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 63.14 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.04 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 54.96 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+sulphates+volatile_acidity
+>> 정답률: 53.02 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.06 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.23 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.87 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.17 %
+
+>> 조합: alcohol+chlorides+citric_acid+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.35 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 55.47 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 62.35 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 55.47 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 78.17 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.83 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 52.82 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+sulphates
+>> 정답률: 51.24 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 58.52 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 52.90 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 52.99 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.00 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.47 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 58.33 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 52.96 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.04 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 59.69 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 52.82 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 72.85 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.41 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 59.84 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.05 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 59.70 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 72.82 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.91 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+sulphates
+>> 정답률: 52.72 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 63.06 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.06 %
+
+>> 조합: alcohol+chlorides+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 54.86 %
+
+>> 조합: alcohol+chlorides+density+pH+sulphates+volatile_acidity
+>> 정답률: 52.96 %
+
+>> 조합: alcohol+chlorides+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.06 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.03 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.58 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.94 %
+
+>> 조합: alcohol+chlorides+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.39 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 62.55 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.93 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 78.61 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.89 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 62.78 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 86.89 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 63.06 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 78.42 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 56.18 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.41 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.12 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.40 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.56 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 58.81 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.21 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 67.38 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.76 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.28 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.18 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 59.98 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.15 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 60.00 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 72.99 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.55 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.14 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.16 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.26 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.21 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.10 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.38 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.96 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.23 %
+
+>> 조합: alcohol+chlorides+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.49 %
+
+>> 조합: alcohol+chlorides+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.29 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 55.79 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 62.52 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 55.79 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 78.36 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.10 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.73 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+sulphates
+>> 정답률: 51.62 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 58.75 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 52.87 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.49 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.18 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.64 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 58.66 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.01 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 59.81 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 53.32 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 73.08 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.58 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 59.74 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.21 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 59.89 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 73.03 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.13 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+sulphates
+>> 정답률: 53.02 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 63.15 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.99 %
+
+>> 조합: alcohol+citric_acid+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 55.03 %
+
+>> 조합: alcohol+citric_acid+density+pH+sulphates+volatile_acidity
+>> 정답률: 52.87 %
+
+>> 조합: alcohol+citric_acid+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.03 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.18 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.87 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.11 %
+
+>> 조합: alcohol+citric_acid+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.30 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 62.72 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.93 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 78.74 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 56.40 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 62.78 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 87.04 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 63.08 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 78.50 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 56.56 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.50 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.81 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.59 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 55.01 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 59.21 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.27 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.46 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 67.54 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.89 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.59 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.20 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.10 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.28 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 60.17 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 73.17 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 54.01 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.43 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.27 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.26 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.33 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.46 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.51 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.23 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.46 %
+
+>> 조합: alcohol+citric_acid+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.58 %
+
+>> 조합: alcohol+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.64 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 62.58 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.98 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 78.54 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.86 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 62.72 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 86.87 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 63.01 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 78.39 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 56.15 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.41 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.06 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 67.42 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.59 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 58.77 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.32 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.20 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 67.38 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.26 %
+
+>> 조합: alcohol+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.20 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 59.92 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.15 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 60.00 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 72.97 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.58 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.14 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.15 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.21 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.24 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.06 %
+
+>> 조합: alcohol+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.37 %
+
+>> 조합: alcohol+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.06 %
+
+>> 조합: alcohol+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.21 %
+
+>> 조합: alcohol+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.46 %
+
+>> 조합: alcohol+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.29 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 62.98 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 87.02 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 63.15 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 78.76 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 56.27 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.85 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 87.01 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 63.41 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 87.04 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.62 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 67.75 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.86 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.66 %
+
+>> 조합: alcohol+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.50 %
+
+>> 조합: alcohol+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.68 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.25 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.60 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.33 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.31 %
+
+>> 조합: alcohol+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.36 %
+
+>> 조합: alcohol+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.57 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 47.70 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 53.30 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 47.76 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 69.83 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 48.22 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 45.56 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+sulphates
+>> 정답률: 45.04 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 50.87 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 47.16 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 45.79 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 59.13 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 47.78 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 50.52 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 47.25 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.05 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 49.78 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 46.30 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 63.94 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 46.31 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 49.84 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 76.36 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 50.24 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 64.04 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 46.56 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.23 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+sulphates
+>> 정답률: 44.39 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 53.99 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.78 %
+
+>> 조합: chlorides+citric_acid+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 47.41 %
+
+>> 조합: chlorides+citric_acid+density+pH+sulphates+volatile_acidity
+>> 정답률: 47.30 %
+
+>> 조합: chlorides+citric_acid+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.38 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 54.27 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.01 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.23 %
+
+>> 조합: chlorides+citric_acid+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.53 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 53.39 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 47.78 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 70.06 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.05 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 53.52 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.48 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 53.81 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 70.00 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.39 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.02 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.87 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 59.32 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.73 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 50.95 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.33 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.52 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.38 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.19 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.50 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.19 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 50.16 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 76.44 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 50.65 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 64.25 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.76 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.32 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.47 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.75 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.50 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.41 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 54.39 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.95 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.72 %
+
+>> 조합: chlorides+citric_acid+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.71 %
+
+>> 조합: chlorides+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.49 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 53.22 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 47.76 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 69.86 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.30 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 53.42 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.30 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 53.58 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 69.82 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.24 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 69.88 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.33 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 59.15 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.01 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 50.79 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.05 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.36 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.27 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.45 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.13 %
+
+>> 조합: chlorides+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.09 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 49.90 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 76.19 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 50.30 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 63.91 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.62 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.09 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.25 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.52 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.33 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.18 %
+
+>> 조합: chlorides+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 54.13 %
+
+>> 조합: chlorides+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.34 %
+
+>> 조합: chlorides+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.33 %
+
+>> 조합: chlorides+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.58 %
+
+>> 조합: chlorides+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.35 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 53.56 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.44 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.84 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 70.08 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.39 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.08 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.45 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.19 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.51 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.11 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.32 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.50 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.37 %
+
+>> 조합: chlorides+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.45 %
+
+>> 조합: chlorides+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.60 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.45 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.67 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.48 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.37 %
+
+>> 조합: chlorides+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.57 %
+
+>> 조합: chlorides+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.67 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 53.30 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 47.76 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 70.08 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 48.07 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 53.55 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.48 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 53.76 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 69.94 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 48.31 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.02 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.62 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 59.26 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.68 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 50.93 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.19 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.53 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.37 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.19 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.49 %
+
+>> 조합: citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.21 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 50.13 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 76.44 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 50.59 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 64.23 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.70 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.31 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.47 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.58 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.48 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.41 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 54.36 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.84 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.70 %
+
+>> 조합: citric_acid+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.70 %
+
+>> 조합: citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.49 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 53.55 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.64 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.09 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 70.09 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.45 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.25 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.62 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.19 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.68 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.12 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.57 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.08 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.57 %
+
+>> 조합: citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.53 %
+
+>> 조합: citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.74 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.68 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.85 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.59 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.46 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.68 %
+
+>> 조합: citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.89 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 53.53 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.41 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.92 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 70.06 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.36 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.05 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.44 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.13 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.47 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.08 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 59.30 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.58 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.38 %
+
+>> 조합: density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 51.45 %
+
+>> 조합: density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.58 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.45 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.65 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.48 %
+
+>> 조합: density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.34 %
+
+>> 조합: density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.56 %
+
+>> 조합: density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.69 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.59 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.33 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.68 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.26 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.61 %
+
+>> 조합: fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 59.72 %
+
+>> 조합: free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.67 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH
+>> 정답률: 55.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar
+>> 정답률: 61.43 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates
+>> 정답률: 55.18 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide
+>> 정답률: 76.17 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.46 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar
+>> 정답률: 53.56 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+sulphates
+>> 정답률: 51.35 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide
+>> 정답률: 58.10 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+volatile_acidity
+>> 정답률: 52.81 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates
+>> 정답률: 53.62 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.94 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+volatile_acidity
+>> 정답률: 54.61 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide
+>> 정답률: 57.97 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+sulphates+volatile_acidity
+>> 정답률: 53.26 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.43 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 59.06 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 52.95 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 71.89 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 53.46 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 59.27 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.56 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 59.13 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 71.62 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 53.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.68 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+sulphates
+>> 정답률: 53.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 62.09 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 54.78 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+sulphates+volatile_acidity
+>> 정답률: 52.95 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.83 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 62.37 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.95 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.01 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.27 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 61.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.43 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 76.54 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.56 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 61.61 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.38 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 61.80 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 76.42 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 55.83 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.31 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.61 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 66.25 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.84 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 58.23 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.13 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.67 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.25 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 55.07 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.20 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 59.40 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.84 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 59.50 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 72.00 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.67 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.23 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.82 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.69 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.73 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.86 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 62.57 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.21 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.40 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.23 %
+
+>> 조합: alcohol+chlorides+citric_acid+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.57 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 61.52 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.12 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 76.37 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.39 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 61.61 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.29 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 61.78 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 76.33 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 55.58 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.20 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.12 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 66.12 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.49 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 58.12 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.09 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.47 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.23 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.14 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.41 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 59.21 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.70 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 59.34 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 71.71 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.36 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.03 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.68 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.70 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.51 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.59 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 62.29 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.04 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.17 %
+
+>> 조합: alcohol+chlorides+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.15 %
+
+>> 조합: alcohol+chlorides+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.35 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 61.80 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.56 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 62.00 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 76.59 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.64 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.44 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 85.44 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 62.26 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.33 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.45 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.42 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.35 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.87 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.51 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.88 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.92 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.79 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.22 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.81 %
+
+>> 조합: alcohol+chlorides+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.63 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 61.66 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 55.41 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 76.54 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.58 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 61.64 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.38 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 61.74 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 76.44 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 55.83 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.33 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.64 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 66.25 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.89 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 58.23 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.06 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.69 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.26 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 55.01 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.23 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.63 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 59.29 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 81.82 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 59.55 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 72.00 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.66 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.23 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.81 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.67 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.71 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 71.83 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 62.55 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.15 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.35 %
+
+>> 조합: alcohol+citric_acid+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.21 %
+
+>> 조합: alcohol+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.58 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 62.00 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.58 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 62.00 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 76.68 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.84 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.64 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 85.41 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 62.27 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.42 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.56 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.63 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 55.07 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.55 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.81 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.51 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 82.07 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.03 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.95 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.29 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.90 %
+
+>> 조합: alcohol+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.81 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 61.83 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 85.56 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 62.01 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 76.56 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.66 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.44 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 85.44 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 62.27 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.29 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.47 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 66.45 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.78 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.35 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.90 %
+
+>> 조합: alcohol+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.49 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.87 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.95 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.76 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.17 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.81 %
+
+>> 조합: alcohol+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.61 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 85.64 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 62.37 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.49 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.62 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 85.42 %
+
+>> 조합: alcohol+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.58 %
+
+>> 조합: alcohol+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.99 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 52.75 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 47.42 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 68.43 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 47.95 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 52.96 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 79.58 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 53.12 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 68.43 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 47.87 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.48 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 45.71 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 58.06 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 47.71 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 50.44 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 47.28 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.73 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 57.93 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.05 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.30 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.52 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 49.48 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 74.94 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 49.82 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 62.71 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 46.44 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.81 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 74.90 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.05 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.91 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.74 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 53.69 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.75 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.95 %
+
+>> 조합: chlorides+citric_acid+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 47.34 %
+
+>> 조합: chlorides+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.70 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 52.92 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 79.67 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.22 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 68.55 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.13 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.62 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.73 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.35 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.76 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.60 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 58.24 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 48.02 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.46 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.95 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.52 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 75.14 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.13 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.11 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.98 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.13 %
+
+>> 조합: chlorides+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.30 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 52.61 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 79.58 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 52.79 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 68.46 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.04 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.52 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.62 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.22 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.67 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.46 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 57.92 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.27 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.12 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.73 %
+
+>> 조합: chlorides+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.09 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 74.82 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.04 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.77 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.78 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.83 %
+
+>> 조합: chlorides+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.04 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.70 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.30 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.78 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.62 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.79 %
+
+>> 조합: chlorides+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.30 %
+
+>> 조합: chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.11 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 52.84 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 79.67 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 53.22 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 68.54 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 48.05 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.60 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.70 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.32 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.76 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.60 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 58.23 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.99 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.38 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.95 %
+
+>> 조합: citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.50 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 75.14 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 50.13 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.10 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 62.97 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.13 %
+
+>> 조합: citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 54.30 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.79 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.41 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.90 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.72 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.91 %
+
+>> 조합: citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.67 %
+
+>> 조합: citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.30 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.68 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 53.30 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.78 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 68.60 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.81 %
+
+>> 조합: density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.29 %
+
+>> 조합: density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.11 %
+
+>> 조합: fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.84 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar
+>> 정답률: 60.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates
+>> 정답률: 54.93 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide
+>> 정답률: 74.70 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+volatile_acidity
+>> 정답률: 55.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates
+>> 정답률: 60.70 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+volatile_acidity
+>> 정답률: 60.94 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide
+>> 정답률: 74.54 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+volatile_acidity
+>> 정답률: 55.21 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.62 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates
+>> 정답률: 53.55 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 65.03 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 57.89 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+sulphates+volatile_acidity
+>> 정답률: 53.01 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 65.09 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.79 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.95 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.98 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 58.43 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 80.02 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 58.86 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 70.49 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 53.42 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.56 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.94 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 58.84 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.88 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.36 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 61.78 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.02 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.49 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 55.13 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.75 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.78 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 84.07 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 61.11 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 74.76 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.41 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.83 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.95 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.23 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.96 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.68 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 65.28 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 55.04 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.34 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.35 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.40 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 80.18 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.12 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.11 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.71 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.08 %
+
+>> 조합: alcohol+chlorides+citric_acid+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.78 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.61 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 83.93 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 61.03 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 74.60 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.09 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.51 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.92 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.21 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.87 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.48 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 65.25 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.50 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.26 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.97 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.29 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 79.96 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.04 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.93 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.57 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.90 %
+
+>> 조합: alcohol+chlorides+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.51 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 84.12 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.40 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 84.04 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.76 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.96 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.45 %
+
+>> 조합: alcohol+chlorides+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.14 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.77 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 84.05 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 61.12 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 74.74 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.41 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.83 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 83.95 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.21 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.96 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.68 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 65.29 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.96 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.35 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 58.38 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.34 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 80.16 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.17 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.10 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 70.68 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.07 %
+
+>> 조합: alcohol+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.78 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 84.21 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.61 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 84.22 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.94 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 84.02 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.55 %
+
+>> 조합: alcohol+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.25 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 84.10 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 61.38 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 84.04 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 74.76 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 83.96 %
+
+>> 조합: alcohol+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.43 %
+
+>> 조합: alcohol+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 80.13 %
+
+>> 조합: alcohol+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 84.15 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 52.01 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 78.42 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 52.25 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 66.97 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 47.79 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.95 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.36 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 52.42 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.37 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.03 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 57.12 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 47.81 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.20 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 50.45 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.26 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 73.17 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 49.85 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.17 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 61.87 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.26 %
+
+>> 조합: chlorides+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 53.30 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.51 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 52.58 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.61 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.14 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.51 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.50 %
+
+>> 조합: chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.42 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.37 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 52.25 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.41 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 66.95 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.36 %
+
+>> 조합: chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.38 %
+
+>> 조합: chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.28 %
+
+>> 조합: chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.56 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.48 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 52.53 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.61 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 67.12 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.50 %
+
+>> 조합: citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.47 %
+
+>> 조합: citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.42 %
+
+>> 조합: citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.70 %
+
+>> 조합: density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.53 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates
+>> 정답률: 60.41 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide
+>> 정답률: 82.33 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+volatile_acidity
+>> 정답률: 60.49 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide
+>> 정답률: 73.42 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+volatile_acidity
+>> 정답률: 55.09 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.40 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 82.41 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.66 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.39 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.31 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 63.89 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 54.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.86 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 57.87 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.09 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 78.71 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 58.78 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.59 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 69.40 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.64 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 60.98 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 82.52 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.92 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.48 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.57 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.48 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.17 %
+
+>> 조합: alcohol+chlorides+citric_acid+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.82 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 82.38 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.61 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.36 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.40 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.33 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.98 %
+
+>> 조합: alcohol+chlorides+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.70 %
+
+>> 조합: alcohol+chlorides+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.50 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 82.52 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 60.91 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.45 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 73.57 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.48 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 64.18 %
+
+>> 조합: alcohol+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 78.81 %
+
+>> 조합: alcohol+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.62 %
+
+>> 조합: alcohol+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 82.50 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 76.79 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 51.99 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.73 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 65.69 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.82 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 56.83 %
+
+>> 조합: chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.09 %
+
+>> 조합: chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.96 %
+
+>> 조합: chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.79 %
+
+>> 조합: citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 76.94 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide
+>> 정답률: 81.19 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+volatile_acidity
+>> 정답률: 59.90 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.11 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 72.48 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.11 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 63.31 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 77.71 %
+
+>> 조합: alcohol+chlorides+citric_acid+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.22 %
+
+>> 조합: alcohol+chlorides+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.01 %
+
+>> 조합: alcohol+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 81.22 %
+
+>> 조합: chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 75.30 %
+
+>> 조합: alcohol+chlorides+citric_acid+density+fixed_acidity+free_sulfur_dioxide+pH+residual_sugar+sulphates+total_sulfur_dioxide+volatile_acidity
+>> 정답률: 79.73 %
+총 조합 갯수: 2047
+MAX 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide >> 88.78 %
+
+Process finished with exit code 0

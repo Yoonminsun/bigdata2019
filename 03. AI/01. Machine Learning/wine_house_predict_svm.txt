@@ -1,0 +1,54 @@
+< wine predict svm >
+
+ac_score = metrics.accuracy_score(wine_label,pre)
+print('전체 조합 정답률: %.2f %%'%(ac_score*100)) ## 79.73%
+
+총 조합 갯수: 2047
+MAX 조합: alcohol+fixed_acidity+free_sulfur_dioxide+residual_sugar+total_sulfur_dioxide >> 88.78 %
+
+
+< housing predict svm >
+
+############## Metrics() 사용
+ 
+>> 조합: lotsize+bedrooms+bathrms+stories+driveway01+recroom01+fullbase01+gashw01+airco01+garagepl+prefarea01
+>> 정답률: 63.94 %
+
+총 조합 갯수: 2047
+MAX 조합: lotsize+bedrooms+stories+garagepl >> 72.71 %
+
+############## delta 범위 지정
+
+>> 조합: lotsize+bedrooms+bathrms+stories+driveway01+recroom01+fullbase01+gashw01+airco01+garagepl+prefarea01
+>> 0% match count= 328
+>> 5% match count= 345
+>> 10% match count= 367
+>> 20% match count= 398
+>> 0% 정답률: 63.94 %
+>> 5% 정답률: 67.25 %
+>> 10% 정답률: 71.54 %
+>> 20% 정답률: 77.58 %
+
+총 조합 갯수 = 2047
+0% MAX 조합: lotsize+bedrooms+stories+garagepl >> 72.71 %
+5% MAX 조합: lotsize+bedrooms+stories+garagepl >> 75.63 %
+10% MAX 조합: lotsize+bedrooms+stories+garagepl >> 78.75 %
+20% MAX 조합: lotsize+bedrooms+stories+garagepl >> 82.85 %
+
+######### train_test_split
+>> 조합: lotsize+bedrooms+bathrms+stories+driveway01+recroom01+fullbase01+gashw01+airco01+garagepl+prefarea01
+>> 0% match count= 2
+>> 5% match count= 14
+>> 10% match count= 25
+>> 20% match count= 58
+>> 0% 정답률: 1.55 %
+>> 5% 정답률: 10.85 %
+>> 10% 정답률: 19.38 %
+>> 20% 정답률: 44.96 %
+전체 데이터 수: 513
+학습 데이터 수: 384
+테스트 데이터 수: 129
+0% MAX 조합: fullbase01+airco01 >> 6.20 %
+5% MAX 조합: bedrooms+stories+airco01 >> 18.60 %
+10% MAX 조합: bedrooms+stories+airco01 >> 27.91 %
+20% MAX 조합: lotsize+driveway01+recroom01+garagepl >> 52.71 %

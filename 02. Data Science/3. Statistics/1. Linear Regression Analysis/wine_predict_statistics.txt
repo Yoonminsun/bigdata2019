@@ -1,0 +1,7 @@
+< wine predict statistics >
+
+>> alcohol + chlorides + citric_acid + density + fixed_acidity + free_sulfur_dioxide + pH + residual_sugar + sulphates + total_sulfur_dioxide + volatile_acidity 
+>> match count= 3465
+>> 정답률: 53.33 %
+
+MAX 조합: alcohol + citric_acid + density + free_sulfur_dioxide + sulphates + total_sulfur_dioxide + volatile_acidity  >> 53.82 %
