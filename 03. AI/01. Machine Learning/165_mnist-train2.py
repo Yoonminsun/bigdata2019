@@ -1,3 +1,4 @@
+## 1000번 돌려서 평균값 내기
 from sklearn import model_selection,svm,metrics
 from sklearn.model_selection import train_test_split
 import pandas as pd
