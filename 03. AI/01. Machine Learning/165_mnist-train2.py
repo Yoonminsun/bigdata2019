@@ -7,6 +7,7 @@ all_data = pd.read_csv("./mnist/all_data.csv",header=None)
 match_percent=[]
 all_label = all_data.iloc[:,0]
 all_images = all_data.iloc[:,1:]
+indx=1
 for index in range(len(all_images.columns)):
     apply_images = all_images.iloc[:,index]
     all_images[index] = apply_images.apply(lambda x:int(x)/256)
@@ -19,8 +20,9 @@ for num in range(1000):
     print("전체 데이터 수: %d"%(len(all_images)))
     print("학습 전용 데이터 수: %d"%(len(train_data)))
     print("테스트 데이터 수: %d"%(len(test_data)))
-    print("정답률 = %.2f %%"%(ac_score*100))
+    print("%d. 정답률 = %.2f %%"%(indx,ac_score*100))
     match_percent.append(ac_score*100)
+    indx+=1
 
 match_sum = sum(match_percent)
 print("1000번: %.2f %%"%(match_sum/1000))
