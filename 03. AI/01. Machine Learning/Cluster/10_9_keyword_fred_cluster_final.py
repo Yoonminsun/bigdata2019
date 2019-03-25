@@ -92,9 +92,9 @@ def analyze_clusters_product_count(labels,user_product_dic, id_user_dic):
 for line in open('online_retail_utf.txt'):
     # 데이터를 한 행씩 읽어서 필요한 항목을 저장
     line_items = line.strip().split('\t')
-    user_code = line_items[6]
-    product_id = line_items[1]
-    product_name = line_items[2]
+    user_code = line_items[6] # Customer ID
+    product_id = line_items[1] # StockCode
+    product_name = line_items[2] # Description
 
     # 사용자 ID가 없을 경우 무시
     if len(user_code) == 0:
@@ -127,6 +127,7 @@ for line in open('online_retail_utf.txt'):
 
 # 데이터 구조를 다 채웠으므로 각 사용자들이 구매한 상품 가짓수로 리스트를 생성
 product_per_user_li = [len(x) for x in user_product_dic.values()]
+
 
 print("Step1] 빅데이터 로딩 완료")
 # 최종 사용자 수와 상품 가짓수를 출력
