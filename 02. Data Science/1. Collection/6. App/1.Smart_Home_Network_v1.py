@@ -4,7 +4,7 @@ import Bus_stop_info
 import Youtube_data_api
 import Genie_music_crawling_re
 import threading,time,ctypes,json
-import pandas as pd
+
 g_Radiator = False
 g_Air_Conditioner = False
 g_Balcony_Windows = False
@@ -46,7 +46,7 @@ def terminate_ai_mode(ai_scheduler):
         ctypes.pythonapi.PyThreadState_SetAsyncExc(ai_scheduler.ident,None)
         raise SystemError('PyhreadState_SetAsyncExc failed')
 def print_main_menu():
-    print('1. 기상정보 조회')
+    print('\n1. 기상정보 조회')
     print('2. 장비상태 확인')
     print('3. 장비제어')
     print('4. 스마트모드')
@@ -70,35 +70,33 @@ def print_device_menu():
     print('3. 가습기')
     print('4. 제습기')
     print('5. 발코니(베란다) 창문')
-def temperature_room():
+def temperature_room(): # 최초 내부 기온은 외부 기온 기준으로 정함
     for data in json_list_weather:
         if data['category'] == 'T1H':
             return int(data['fcstValue'])
-def temperature_change_up():
+def temperature_change_up(): # time을 이용하여 지정된 시간마다(30분) 1도씩 증가
     global temperature,g_AI_Mode,g_Radiator
     while True:
         if g_Radiator == False:
             break
         else:
-            time.sleep(2)
-            # temperature = int(temperature)
+            time.sleep(1)
             if g_Radiator==True:
                 temperature+=1
             if g_AI_Mode==True:
                 changed_status()
-def temperature_change_down():
+def temperature_change_down(): # time을 이용하여 지정된 시간마다 1도씩 감소
     global temperature,g_AI_Mode,g_Air_Conditioner
     while True:
         if g_Air_Conditioner == False:
             break
         else:
             time.sleep(1800)
-            # temperature = int(temperature)
             if g_Air_Conditioner==True:
                 temperature -= 1
             if g_AI_Mode==True:
                 changed_status()
-def control_temperature(RorA):
+def control_temperature(RorA): # 난방기, 에어컨 작동 유무에 따라 Thread 실행,종료
     global g_Radiator,g_Air_Conditioner
     if RorA=='R':
         g_Radiator = not g_Radiator
@@ -124,11 +122,11 @@ def control_temperature(RorA):
                     terminate_ai_mode(g_Air_Conditioner_scheduler )
                 except:
                     pass
-def humidity_room():
+def humidity_room(): # 최초 내부 습도는 외부 습도를 기준으로 정함
     for data in json_list_weather:
         if data['category'] == 'REH':
             return int(data['fcstValue'])
-def humidity_change_up():
+def humidity_change_up(): # time을 이용하여 지정된 시간마다 습도가 1씩 증가
     global humidity, g_AI_Mode,g_Humidifier
     while True:
         if g_Humidifier == False:
@@ -139,7 +137,7 @@ def humidity_change_up():
                 humidity += 1
             if g_AI_Mode == True:
                 changed_status()
-def humidity_change_down():
+def humidity_change_down(): # time을 이용하여 지정된 시간마다 습도가 1씩 감소
     global humidity, g_AI_Mode,g_Dehumidifier
     while True:
         if g_Humidifier == False:
@@ -150,7 +148,7 @@ def humidity_change_down():
                 humidity -= 1
             if g_AI_Mode == True:
                 changed_status()
-def control_humidity(HorD):
+def control_humidity(HorD): # 가습기,제습기 작동 유무에 따라 Thread 실행,종료
     global g_Humidifier, g_Dehumidifier
     if HorD == 'H':
         g_Humidifier = not g_Humidifier
@@ -190,7 +188,7 @@ def control_device():
     check_device_status()
     if g_AI_Mode==True:
         changed_status()
-def get_realtime_weather_info():
+def get_realtime_weather_info(): # time을 이용하여 지정된 시간마다 날씨 예보 Update
     global json_list_weather,json_list_air
     while True:
         if g_AI_Mode == False:
@@ -199,11 +197,10 @@ def get_realtime_weather_info():
             time.sleep(3600)
             weather_time = json_weather.get_Realtime_Weather_Info()
             json_list_weather = json_weather.Make_Weather_Json(weather_time)
-            json_weather.Make_Weather_CSV()
             json_list_air = json_air.Make_Air_json_csv()
             json_air.Make_Air_json_csv()
             changed_status()
-def smart_mode():
+def smart_mode(): # 인공지능 모드 메뉴, Thread 이용
     global g_AI_Mode
     print('1. 인공지능 모드 조회')
     print('2. 인공지능 모드 상태 변경')
@@ -277,7 +274,7 @@ def changed_status(): # 기준에 따라 기기 상태 바꾸는 함수
             elif int(json_list_air[0]['pm10Value']) >= 151 or int(json_list_air[0]['pm25Value']) >= 101:
                 g_Balcony_Windows = False
                 print('미세먼지 등급이 "매우나쁨" 이므로 창문을 닫습니다.')
-def TV_on():
+def TV_on(): # Tv 실행시 메뉴 출력
     print('1. 버스 도착정보 조회\n2. 유튜브 검색/재생\n3. 음악 차트 조회')
     menu = int(input('실행할 메뉴를 선택하세요: '))
     if menu==1:
@@ -294,7 +291,7 @@ def TV_on():
             return
         elif menu_music==2:
             return
-def Simulation_mode():
+def Simulation_mode(): # Simulation 하고싶은 json을 가져와 Test 할 수 있도록 함
     global json_list_weather,json_list_air,temperature,humidity,g_Smul_Mode
     g_Smul_Mode=True
     input_file = './시뮬레이션_초단기예보조회.json'
@@ -310,7 +307,7 @@ def Simulation_mode():
     json_list_air = json.loads(json_string2)
     temperature = temperature_room()
     humidity = humidity_room()
-def Simulation_save_CSV():
+def Simulation_save_CSV(): # Simaulation 종료시 사용했던 json을 csv로 저장
     global json_list_weather,json_list_air
     csv_Data_weather = ['baseDate,baseTime,category,fcstDate,fcstTime,fcstValue,nx,ny']
     csv_Data_air = ['도시명,dataTime,미세먼지농도,초미세먼지농도']
@@ -329,7 +326,7 @@ def Simulation_save_CSV():
     f = open('./시뮬레이션_미세먼지농도조회.csv','w')
     f.write('\n'.join(csv_Data_air))
     f.close()
-def get_weather_air_info(): #시뮬->기본으로 돌아갈때 다시 정보 받아오는 함수
+def get_weather_air_info(): # Simulation->기본으로 돌아갈때 다시 정보 받아오는 함수
     global json_list_weather,json_list_air,temperature,humidity
     json_weather.get_Realtime_Weather_Info()
     json_list_weather = json_weather.json_weather_result

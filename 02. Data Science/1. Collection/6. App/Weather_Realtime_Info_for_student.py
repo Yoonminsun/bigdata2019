@@ -2,12 +2,10 @@ import urllib.request
 import datetime
 import json
 import time
-import pandas as pd
 
 weather_time=''
-# access_key='oQSz2oLeE2%2FyKkC5Bvap%2ByKJ7NjXePjiinT9FimEL9PX9o0aEMHImBYj3NVIi9ArzQx4avj62hoXKqANLvj%2FcA%3D%3D'
 access_key='Asaa8kOSFjVjAx%2FXl37Mszm9bTR4wwBm9lfRfoFPfZIdXZAaQGvHp8JYATLNbJQoZVj6Yu8mLkRp3jiDwYunsg%3D%3D'
-def get_Request_URL(url):
+def get_Request_URL(url): # url 에 제대로 접근했는지 확인 후 가져옴
     req = urllib.request.Request(url)
 
     try:
@@ -20,7 +18,7 @@ def get_Request_URL(url):
         print(e)
         print('[%s] Error for URL : %s'%(datetime.datetime.now(),url))
         return None
-def get_Weather_URL(day_time):
+def get_Weather_URL(day_time): # url 조합
     end_point = 'http://newsky2.kma.go.kr/service/SecndSrtpdFrcstInfoService2/ForecastTimeData'
     parameters = '?serviceKey='+access_key
     parameters+= '&base_date='+yyyymmdd
@@ -36,7 +34,7 @@ def get_Weather_URL(day_time):
         return None
     else:
         return json.loads(retData)
-def Make_Weather_Json(day_time):
+def Make_Weather_Json(day_time): # json인 날씨 정보를 가져와 Dictionary에 담음, csv 저장
     jsonData = get_Weather_URL(day_time)
     if(jsonData['response']['header']['resultMsg'] == 'OK'):
         for prn_data in jsonData['response']['body']['items']['item']:
@@ -44,18 +42,27 @@ def Make_Weather_Json(day_time):
                                         'category':prn_data.get('category'),'fcstDate':prn_data.get('fcstDate'),
                                         'fcstTime':prn_data.get('fcstTime'),'fcstValue':prn_data.get('fcstValue'),
                                         'nx':prn_data.get('nx'),'ny':prn_data.get('ny')})
+            csv_Data.append(str(prn_data.get('baseDate')) + ',' + str(prn_data.get('baseTime')) + ',' +
+                            prn_data.get('category') + ',' + str(prn_data.get('fcstDate')) + ',' +
+                            str(prn_data.get('fcstTime')) + ',' + str(prn_data.get('fcstValue')) + ',' +
+                            str(prn_data.get('nx')) + ',' + str(prn_data.get('ny')))
+            f = open('동구_신암동_초단기예보조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
+            f.write('\n'.join(csv_Data))
+            f.close()
     return json_weather_result
-def Make_Weather_CSV(day_time):
-    jsonData = get_Weather_URL(day_time)
-    if (jsonData['response']['header']['resultMsg'] == 'OK'):
-        for prn_data in jsonData['response']['body']['items']['item']:
-            csv_Data.append(str(prn_data.get('baseDate'))+','+str(prn_data.get('baseTime'))+','+
-                                        prn_data.get('category')+','+str(prn_data.get('fcstDate'))+','+
-                                        str(prn_data.get('fcstTime'))+','+str(prn_data.get('fcstValue'))+','+
-                                        str(prn_data.get('nx'))+','+str(prn_data.get('ny')))
-        f = open('동구_신암동_초단기예보조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
-        f.write('\n'.join(csv_Data))
-        f.close()
+# def Make_Weather_CSV(day_time): # json은 날씨 정보를 가져와 csv로 저장
+#     jsonData = get_Weather_URL(day_time)
+#     if (jsonData['response']['header']['resultMsg'] == 'OK'):
+#         for prn_data in jsonData['response']['body']['items']['item']:
+#             csv_Data.append(str(prn_data.get('baseDate'))+','+str(prn_data.get('baseTime'))+','+
+#                                         prn_data.get('category')+','+str(prn_data.get('fcstDate'))+','+
+#                                         str(prn_data.get('fcstTime'))+','+str(prn_data.get('fcstValue'))+','+
+#                                         str(prn_data.get('nx'))+','+str(prn_data.get('ny')))
+#         f = open('동구_신암동_초단기예보조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
+#         f.write('\n'.join(csv_Data))
+#         f.close()
+# 각 시간마다 30분 전엔 정보가 제대로 불려오지 않는 api상의 오류가 있음
+# 따라서 30분 전에 날씨 정보를 Update하고 싶을땐 가장 최근시간으로 보정하여 Update 하도록 함
 def get_Realtime_Weather_Info():
     global json_weather_result,csv_Data
     day_min_int=int(day_min)
@@ -64,7 +71,7 @@ def get_Realtime_Weather_Info():
     if 30 < day_min_int <=59:
         day_time = time.strftime("%H%M",time.localtime(time.time()))
         Make_Weather_Json(day_time)
-        Make_Weather_CSV(day_time)
+        # Make_Weather_CSV(day_time)
         if __name__ == '__main__':
             print('\n<<실시간 기상정보 업데이트를 실시합니다!!>>\n'.center(30))
     elif 0<=day_min_int<=30:
@@ -73,7 +80,7 @@ def get_Realtime_Weather_Info():
         revised_min = 60+(day_min_int-30)
         day_time = '{0:0>2}'.format(day_hour_int)+str(revised_min)
         Make_Weather_Json(day_time)
-        Make_Weather_CSV(day_time)
+        # Make_Weather_CSV(day_time)
     if __name__ == '__main__':
         print('\n<<가장 최신 기상정보 업데이트를 실시합니다!!>>\n'.center(30))
     return day_min_int
@@ -92,9 +99,3 @@ if __name__ == '__main__':
     print(Make_Weather_Json(day_time))
     print(Make_Weather_Json(day_time))
 
-    # last_time = json_weather_result[0]['fcstTime']
-    # for result in json_weather_result:
-    #     if result['fcstTime'] == last_time:
-    #         print(result)
-    # print(json_weather_result)
-    # print(csv_Data)

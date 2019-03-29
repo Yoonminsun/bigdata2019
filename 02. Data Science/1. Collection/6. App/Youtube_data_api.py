@@ -5,7 +5,7 @@ import json,webbrowser
 access_key = 'AIzaSyCGfzKFx8QlyHG2orNJNKgHR6jusqtuI4o'
 # 비디오 보기 https://www.youtube.com/watch?v=비디오id&list=재생목록id
 # 재생목록 보기 https://www.youtube.com/playlist?list=재생목록id
-def get_Request_URL(url):
+def get_Request_URL(url): # url 에 제대로 접근했는지 확인 후 가져옴
     req = Request(url)
     try:
         response = urlopen(req)
@@ -46,15 +46,19 @@ def get_search_URL(): # 재생목록,채널은 제외하고 비디오만 가져�
         return None
     else:
         return json.loads(retData)
-def Make_search_jason():
+def Make_search_jason(): # 5개씩 보여주기 위해 index는 5가 넘지 않도록 함
     jsonData = get_search_URL()
     if jsonData==0:
         return 0
     num=0
     if jsonData:
         for prn_data in jsonData['items']:
-            search_video_list.append({'index':num%5+1,'title':prn_data['snippet']['title'],'videoId':prn_data['id']['videoId']})
+            search_video_list.append({'index':num%5+1,'title':prn_data['snippet']['title'],
+                                      'videoId':prn_data['id']['videoId']})
             num+=1
+ # 많은 동영상 검색 결과를 다 보여주는 것 보다 5개씩 나눠서 보여주는 것이 좋을 것이라 판단하여
+ # 5개씩 목록을 보여주고 이전,다음 페이지로 이동할 수 있도록 함
+ # 선택한 영상은 웹브라우저로 open 되게 함
 def play_video():
     if Make_search_jason()==0:
         print('유튜브 검색을 종료합니다.')
@@ -100,7 +104,7 @@ def play_video():
     parameters = 'watch?v=%s'%videoID
     url = end_point+parameters
     webbrowser.open(url)
-def play_music(input_search):
+def play_music(input_search): # genie에서 음악을 선택시 유투브로 자동으로 찾아 재생되게 함
     music_jason=[]
     end_point = 'https://www.googleapis.com/youtube/v3/search'
     parameters = '?key=%s' % access_key
@@ -117,7 +121,4 @@ def play_music(input_search):
         url = 'https://www.youtube.com/watch?v=%s'%music_jason['items'][0]['id']['videoId']
         webbrowser.open(url)
 search_video_list = []
-if __name__ == '__main__':
-    # play_video()
-    play_music('옥탑방 엔플라잉')
-    # Make_search_jason()
+

@@ -6,7 +6,7 @@ import json
 Codejson=[]
 access_key='oQSz2oLeE2%2FyKkC5Bvap%2ByKJ7NjXePjiinT9FimEL9PX9o0aEMHImBYj3NVIi9ArzQx4avj62hoXKqANLvj%2FcA%3D%3D'
 
-def get_Request_URL(url):
+def get_Request_URL(url): # url 에 제대로 접근했는지 확인 후 가져옴
     req = Request(url)
     try:
         response = urlopen(req)
@@ -19,7 +19,7 @@ def get_Request_URL(url):
         print('[%s] Error for URL : %s'%(datetime.datetime.now(),url))
         return None
 
-def get_Bus_stop_ID():
+def get_Bus_stop_ID(): # 찾은 도시코드와 입력한 정류장 이름으로 정류장 코드 찾기
     global stopName
     stopName = input('정류장 이름을 입력하세요: ')
     end_point = 'http://openapi.tago.go.kr/openapi/service/BusSttnInfoInqireService/getSttnNoList?_type=json'
@@ -44,7 +44,7 @@ def get_Bus_stop_ID():
                     if data['nodenm'] == input_stopnm:
                         return data['nodeid']
 
-def get_cityCode():
+def get_cityCode(): # 도시코드 찾기
     global Codejson
     cityCode_url = 'http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getCtyCodeList?_type=json'
     parameters = '&ServiceKey=%s'%access_key
@@ -59,9 +59,10 @@ def get_cityCode():
                 if prn_data['cityname']==cityName:
                     return prn_data['citycode']
 
-def get_arrive_info_URL():
+def get_arrive_info_URL(): # 정류장코드를 이용하여 도착시간을 가져올 url 조합
     stopID = get_Bus_stop_ID()
-    end_point = 'http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/getSttnAcctoArvlPrearngeInfoList?_type=json'
+    end_point = 'http://openapi.tago.go.kr/openapi/service/ArvlInfoInqireService/' \
+                'getSttnAcctoArvlPrearngeInfoList?_type=json'
     parameters = '&serviceKey=%s'%access_key
     parameters += '&cityCode=%s'%get_cityCode()
     parameters += '&nodeId=%s'%stopID
@@ -72,7 +73,7 @@ def get_arrive_info_URL():
     else:
         return json.loads(retData)
 
-def Make_arrive_info_json():
+def Make_arrive_info_json(): # 도착정보에 대한 json을 Dictionary에 담음
     jsonData = get_arrive_info_URL()
     if not jsonData['response']['body']['items']['item']:
         print('버스 운행 시간이 아닙니다.')
@@ -84,14 +85,7 @@ def Make_arrive_info_json():
                                        'vehicletp':prn_data['vehicletp'],'arrtime':prn_data['arrtime']})
     return json_arrive_result
 
-# def Make_arrive_info_CSV():
-#     jsonData = get_arrive_info_URL()
-#     if jsonData['response']['header']['resultMsg'] == 'NORMAL SERVICE.':
-#         for prn_data in jsonData['response']['body']['items']['item']:
-#             csv_arrive_result.append(prn_data['routeid']+','+str(prn_data['routeno'])+','+
-#                                        str(prn_data['arrprevstationcnt'])+','+prn_data['vehicletp']+','+str(prn_data['arrtime']))
-#     return csv_arrive_result
-def Print_arrive_time():
+def Print_arrive_time(): # 도착정보에 대한 Dictionary로 정보 출력
     Make_arrive_info_json()
     global json_arrive_result
     print('%s 정류장에서 운행하는 버스 목록' % stopName)

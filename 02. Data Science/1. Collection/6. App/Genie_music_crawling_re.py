@@ -2,6 +2,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import re,time
 
+# genie 사이트의 음원 인기순위 페이지를 웹크롤링, 문자열로 변환
 html = urllib.request.urlopen('https://genie.co.kr/chart/top200')
 soup = BeautifulSoup(html,'html.parser')
 soup = str(soup)
@@ -9,7 +10,7 @@ music_rank_list = ['순위,제목,가수']
 title_list=[]
 artist_list=[]
 
-def Make_rank_list_CSV():
+def Make_rank_list_CSV(): # 정규식을 이용하여 제목과 아티스트 정보를 가져옴
     global title_list,artist_list
     yyyymmdd = time.strftime("%Y%m%d")
     day_time = time.strftime("%H%M")
@@ -31,7 +32,7 @@ def Make_rank_list_CSV():
     f.write('\n'.join(music_rank_list))
     f.close()
 
-def Print_rank():
+def Print_rank(): # 가져온 정보 출력
     global music_rank_list
     Make_rank_list_CSV()
     print('\n< 음악 Top 50 > _ 지니뮤직')

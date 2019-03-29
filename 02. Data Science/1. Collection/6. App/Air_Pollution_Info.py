@@ -6,7 +6,7 @@ import time
 
 access_key='oQSz2oLeE2%2FyKkC5Bvap%2ByKJ7NjXePjiinT9FimEL9PX9o0aEMHImBYj3NVIi9ArzQx4avj62hoXKqANLvj%2FcA%3D%3D'
 
-def get_Request_URL(url):
+def get_Request_URL(url): # url 에 제대로 접근했는지 확인 후 가져옴
     req = Request(url)
     try:
         response = urlopen(req)
@@ -18,7 +18,7 @@ def get_Request_URL(url):
         print(e)
         print('[%s] Error for URL : %s'%(datetime.datetime.now(),url))
         return None
-def get_Air_URL():
+def get_Air_URL(): # url 조합
     global json_air_result,csv_air_result
     csv_air_result=[]
     json_air_result=[]
@@ -33,6 +33,8 @@ def get_Air_URL():
         return None
     else:
         return json.loads(retData)
+# api에서 가져온 json에서 사용할 데이터를 뽑아 Dictionary에 담음
+# csv 파일로도 저장
 def Make_Air_json_csv():
     jsonData = get_Air_URL()
     yyyymmdd = time.strftime("%Y%m%d")
@@ -42,7 +44,8 @@ def Make_Air_json_csv():
             csv_air_result.append(prn_data['cityName'] + ',' + prn_data['dataTime']
                                   + ',' + prn_data['pm10Value'] + ',' + prn_data['pm25Value'])
             if prn_data['cityName'] == cityName:
-                json_air_result.append({'cityName':prn_data['cityName'],'dataTime':prn_data['dataTime'],'pm10Value':prn_data['pm10Value'],
+                json_air_result.append({'cityName':prn_data['cityName'],'dataTime':
+                    prn_data['dataTime'],'pm10Value':prn_data['pm10Value'],
                                         'pm25Value':prn_data['pm25Value']})
         f = open('동구_실시간_미세먼지농도조회_%s%s.csv' % (yyyymmdd, day_time), 'w')
         f.write('\n'.join(csv_air_result))
