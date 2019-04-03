@@ -4,11 +4,11 @@ import numpy as np
 # 활성화 함수 종류
 # 1. sigmoid : 결과 값이 2클래스로 분류할 경우
 # 2. 소프트맥스 : 결과 값이 다중 클래스(3가지 이상)로 분류할 경우
-# 3. 향등 함수 : 회귀모형(값이 선형적으로 증가하는 경우)에 적용
+# 3. 항등 함수 : 회귀모형(값이 선형적으로 증가하는 경우)에 적용
 def sigmoid(x):
     return 1/(1+np.exp(-x))
 
-def identify_function(x): # 향등 함수: 입력값을 그대로 출력값으로 하는 함수 (선형)
+def identify_function(x): # 항등 함수: 입력값을 그대로 출력값으로 하는 함수 (선형)
     return x
 
 def init_network():
