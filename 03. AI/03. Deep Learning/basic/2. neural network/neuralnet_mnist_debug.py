@@ -32,11 +32,11 @@ def get_data():
     x_train /= 255 # 정규화로 0~255 를 0.0~1.0 범위로 변환
     # Shape 만 강조하기 위해 데이터 형식을 변환하는, 전처리(Pre-processing)
     x_test /= 255
-    return x_test,x_train
+    return x_test,t_test
 
 def init_network():
     with open("sample_weight.pkl",'rb') as f:
-        network = pickle.load(f)
+        network = pickle.load(f) #가중치와 편향값이 배열로 정의된 파일
     return network
 
 # 은닉층이 3계층
@@ -56,6 +56,7 @@ def predict(network,x):
     return y
 
 x,t = get_data()
+print(x)
 network = init_network()
 accuracy_cnt = 0
 for i in range(len(x)):
