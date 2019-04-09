@@ -17,9 +17,9 @@ logit_y = tf.matmul(X,W) + b
 # softmax와 cross-entropy 모델을 설정
 softmax_y = tf.nn.softmax(logit_y)
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(Y * tf.log(softmax_y),reduction_indices=[1]))
+# 경사하강법으로 모델을 학습
 train_step = tf.train.GradientDescentOptimizer(0.1).minimize(cross_entropy)
 
-# 경사하강법으로 모델을 학습
 init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)

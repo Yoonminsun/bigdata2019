@@ -20,7 +20,7 @@ hypothesis = X * W + b
 # reduce_mean: 특정 차원을 제거한 모든 요소에 대한 평균 값, enumerative 타입
 # loss function: 손실함수
 #                => 각 데이터에 대한 예측값과 실제 관측값의 차이를 산술적으로 계산
-cost = tf.reduce_mean(tf.square(hypothesis -  Y))
+cost = tf.reduce_mean(tf.square(hypothesis -  Y)) # square : 제곱 계산
 
 # Minimize, 최적화 함수
 # GradientDescentOptimizer: 경사 하강법 적용
