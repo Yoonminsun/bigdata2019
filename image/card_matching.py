@@ -10,6 +10,7 @@ def calc_dist(list1,list2):
 
 # Grayscale 형태로 이미지 read
 card = cv2.imread('card.png',cv2.IMREAD_GRAYSCALE)
+# card = cv2.imread('card9.png',cv2.IMREAD_GRAYSCALE)
 card_4 = cv2.imread('4_card.png')
 card_4_gray = cv2.cvtColor(card_4,cv2.COLOR_BGR2GRAY)
 cv2.imshow("find",card)
@@ -19,6 +20,8 @@ cv2.imshow("find",card)
 theta, th_card_4= cv2.threshold(card_4_gray,150,255,cv2.THRESH_BINARY)
 
 # 템플릿 매칭
+# TM_CCOEFF 방법은 minMaxLoc 시 max_loc이 왼쪽 상단좌표
+# 왼쪽상단에서 템플릿 이미지 shape 만큼 더한 것이 오른쪽 하단 좌표가 됨
 w,h = card.shape
 res = cv2.matchTemplate(card_4_gray,card,cv2.TM_CCOEFF)
 min_val,max_val,min_loc,max_loc = cv2.minMaxLoc(res)
