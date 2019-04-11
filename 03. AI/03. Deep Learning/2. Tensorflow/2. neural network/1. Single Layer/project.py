@@ -4,28 +4,48 @@ from sklearn.model_selection import train_test_split
 
 data = load_iris()
 
+# 수집 데이터 포맷 명시
+# - 데이터 요약
+# - 고정 변수 명시
+# - 종속 변수 명시
+# - 각각의 필드의 의미 명시
+
 features = data.data
-feature_names = data.feature_names
 target = data.target
-target_names = data.target_names
 
-X = tf.placeholder(tf.float32,[None,4])
-Y = tf.placeholder(tf.float32,[None,3])
+# 변수 설정
+X = tf.placeholder(tf.float32,[None,4]) # 입력 데이터 형태는 특성 4가지
+Y = tf.placeholder(tf.float32,[None,3]) # 3가지 종류 분류
 
-train_data, test_data, train_label, test_label = train_test_split(features,target)
+train_data, test_data, train_label1, test_label1 = train_test_split(features,target)
 
-print('train_data:',train_data.shape)
-print('train_label:',train_label.shape)
-print('test_data:',test_data.shape)
-print('test_data:',test_label.shape)
 W = tf.Variable(tf.zeros([4,3]))
 b = tf.Variable(tf.zeros([3]))
 
+train_label=[]
+test_label=[]
+
+# label 형태가 0,1,2 중 1개의 값씩 들어가 있으므로
+# 0 -> [1. 0. 0.]
+# 1 -> [0. 1. 0.]
+# 2 -> [0. 0. 1.]
+# 처럼 해당 값을 인덱스로 하여 전처리 해줌
+for i in range(len(train_label1)):
+    val = [0.,0.,0.]
+    val[train_label1[i]]=1.
+    train_label.append(val)
+
+for i in range(len(test_label1)):
+    val = [0.,0.,0.]
+    val[test_label1[i]]=1.
+    test_label.append(val)
+
 logit_y = tf.matmul(X,W) + b
 
+# 활성화 함수 설정
 softmax_y = tf.nn.softmax(logit_y)
+# 손실함수 및 학습
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(Y * tf.log(softmax_y),reduction_indices=[1]))
-
 train_step = tf.train.GradientDescentOptimizer(0.1).minimize(cross_entropy)
 
 init = tf.global_variables_initializer()
@@ -35,7 +55,9 @@ sess.run(init)
 for i in range(1000):
     sess.run(train_step,feed_dict={X:train_data, Y:train_label})
 
+# 결과 예측
 correct_prediction = tf.equal(tf.argmax(softmax_y,1), tf.argmax(Y,1))
 
+# 결과 검증
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 print("정확도: ",sess.run(accuracy,feed_dict={X:test_data, Y:test_label}))
