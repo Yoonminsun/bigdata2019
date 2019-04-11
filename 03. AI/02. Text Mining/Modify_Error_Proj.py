@@ -16,7 +16,7 @@ try:
     model = word2vec.Word2Vec(sentences=word,size=100,window=5,min_count=2,workers=4,sg=0)
     print(model.wv.most_similar(input_str)) # 에러
 except Exception:
-    model = FastText(sentences=word,size=100,window=5,min_count=2,workers=4,sg=0)
+    model = FastText(sentences=word,size=100,window=5,min_count=1,workers=4,sg=0)
     a = model.wv.most_similar(input_str)
     print(a) # 유사도 출력
     print('오타 수정:',a[0][0])

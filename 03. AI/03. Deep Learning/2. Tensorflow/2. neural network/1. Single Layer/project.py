@@ -55,7 +55,7 @@ train_step = tf.train.GradientDescentOptimizer(0.1).minimize(cross_entropy)
 init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
-
+print(train_data)
 for i in range(1000):
     sess.run(train_step,feed_dict={X:train_data, Y:train_label})
 
