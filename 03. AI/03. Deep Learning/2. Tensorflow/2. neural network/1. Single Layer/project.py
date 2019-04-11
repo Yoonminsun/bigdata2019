@@ -25,7 +25,7 @@ Y = tf.placeholder(tf.float32,[None,3]) # 3가지 종류 분류
 W = tf.Variable(tf.zeros([4,3]))
 b = tf.Variable(tf.zeros([3]))
 
-train_data, test_data, train_label1, test_label1 = train_test_split(features,target,random_state=False)
+train_data, test_data, train_label1, test_label1 = train_test_split(features,target)
 train_label=[]
 test_label=[]
 
@@ -66,4 +66,8 @@ correct_prediction = tf.equal(tf.argmax(softmax_y,1), tf.argmax(Y,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 print("정확도: ",sess.run(accuracy,feed_dict={X:test_data, Y:test_label}))
 
-# 결과 출력 : 정확도:  0.94736844
+# - 결과 출력
+# (train_test_split 에서 random_state = True 가 default 이므로 계속 random으로 분리 하여 정확도가 조금씩 달라진다)
+# 정확도:  0.94736844
+# 정확도:  1.0
+# 정확도:  0.9736842 ...

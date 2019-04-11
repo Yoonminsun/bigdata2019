@@ -24,6 +24,7 @@ for line in lines:
 
 input_str = input('단어 입력: ')
 
+
 try:
     model = word2vec.Word2Vec(sentences=token_list,size=100,window=5,min_count=2,workers=4,sg=0)
     print(model.wv.most_similar(input_str)) # 에러
