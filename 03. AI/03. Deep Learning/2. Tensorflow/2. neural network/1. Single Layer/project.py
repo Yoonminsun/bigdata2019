@@ -5,11 +5,16 @@ from sklearn.model_selection import train_test_split
 data = load_iris()
 
 # 수집 데이터 포맷 명시
-# - 데이터 요약
-# - 고정 변수 명시
-# - 종속 변수 명시
+# - 데이터 요약: 꽃의 종류와 그에 따른 특성
+# - 고정 변수 명시: 4가지 특성 값
+# - 종속 변수 명시: 꽃의 종류
 # - 각각의 필드의 의미 명시
-
+#   load_iris 의 출력값 : dict_keys([‘data’, ‘target’, ‘target_names’, ‘DESCR’, ‘feature_names’])
+#   - data : 각 꽃의 특성(feature)
+#   - target : 꽃이 어떤 종류인지 0,1,2 로 나타냄
+#   - target_names : 꽃이 어떤 종류인지 이름으로 나타냄 (Setosa,Versicolor,Virginica)
+#   - feature_names : data의 특성이 무엇을 의미하는지 나타냄
+#                     [‘sepal length’,‘sepal width’,‘petal length’,‘petal width’]
 features = data.data
 target = data.target
 
