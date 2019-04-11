@@ -34,13 +34,10 @@ sess.run(init)
 for i in range(1000):
     batch_xs, batch_ys = mnist.train.next_batch(100) # 배치크기 100
     sess.run(train_step,feed_dict={X:batch_xs, Y:batch_ys})
-    if i==0:
-        print(batch_xs)
-        print(batch_ys)
 
 # 결과 예측
 correct_prediction = tf.equal(tf.argmax(softmax_y,1), tf.argmax(Y,1))
-print(correct_prediction)
+
 # 결과 검증
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 print("정확도 : ",sess.run(accuracy,feed_dict={X: mnist.test.images, Y: mnist.test.labels}))

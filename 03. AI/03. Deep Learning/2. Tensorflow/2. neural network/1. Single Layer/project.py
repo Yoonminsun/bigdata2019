@@ -22,11 +22,10 @@ target = data.target
 X = tf.placeholder(tf.float32,[None,4]) # 입력 데이터 형태는 특성 4가지
 Y = tf.placeholder(tf.float32,[None,3]) # 3가지 종류 분류
 
-train_data, test_data, train_label1, test_label1 = train_test_split(features,target)
-
 W = tf.Variable(tf.zeros([4,3]))
 b = tf.Variable(tf.zeros([3]))
 
+train_data, test_data, train_label1, test_label1 = train_test_split(features,target,random_state=False)
 train_label=[]
 test_label=[]
 
@@ -66,3 +65,5 @@ correct_prediction = tf.equal(tf.argmax(softmax_y,1), tf.argmax(Y,1))
 # 결과 검증
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
 print("정확도: ",sess.run(accuracy,feed_dict={X:test_data, Y:test_label}))
+
+# 결과 출력 : 정확도:  0.94736844
