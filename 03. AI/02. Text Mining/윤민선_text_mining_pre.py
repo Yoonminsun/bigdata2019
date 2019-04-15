@@ -1,5 +1,5 @@
-# 데이터: http://blog.naver.com/PostView.nhn?blogId=samsjang&logNo=220982297456&redirect=Dlog&widgetTypeCall=true
-# 책 : https://books.google.co.kr/books?id=RQM5DwAAQBAJ&pg=PA280&lpg=PA280&dq=term_counts+%3D+vectorizer.fit_transform(documents)&source=bl&ots=IxnFJwD_7i&sig=ACfU3U2YopyWcRvkX07A-C5gKa3XNgrhDQ&hl=ko&sa=X&ved=2ahUKEwiM1o7G3cnhAhUlCqYKHUGKDFEQ6AEwAHoECAkQAQ#v=onepage&q=term_counts%20%3D%20vectorizer.fit_transform(documents)&f=false
+# 데이터 출처 : http://blog.naver.com/PostView.nhn?blogId=samsjang&logNo=220982297456&redirect=Dlog&widgetTypeCall=true
+
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
