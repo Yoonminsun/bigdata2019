@@ -9,8 +9,8 @@ def calc_dist(list1,list2):
     return math.sqrt((a*a)+(b*b))
 
 # Grayscale 형태로 이미지 read
-card = cv2.imread('card.png',cv2.IMREAD_GRAYSCALE)
-# card = cv2.imread('card9.png',cv2.IMREAD_GRAYSCALE)
+# card = cv2.imread('card.png',cv2.IMREAD_GRAYSCALE)
+card = cv2.imread('card9.png',cv2.IMREAD_GRAYSCALE)
 card_4 = cv2.imread('4_card.png')
 card_4_gray = cv2.cvtColor(card_4,cv2.COLOR_BGR2GRAY)
 cv2.imshow("find",card)
